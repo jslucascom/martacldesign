@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Crypto Price Chart UX/UI Redesign — Marta Colmenero</title>
+    <meta name="description" content="A UX audit and UI proposal that turned a data-heavy crypto price chart into a modern, intuitive and trustworthy experience." />
+
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('marta-theme');
+          if (stored === 'dark' || stored === 'light') {
+            document.documentElement.setAttribute('data-bs-theme', stored);
+          }
+        } catch (_) {}
+      })();
+    </script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="../assets/images/logo.svg" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-nav fixed-top">
+      <div class="container-xxl">
+        <nav class="navbar navbar-expand-lg py-3" aria-label="Primary">
+          <a class="navbar-brand d-flex align-items-center" href="index.html" aria-label="Marta Colmenero — home">
+            <img src="../assets/images/logo.svg" alt="Marta Colmenero" class="brand-logo" />
+          </a>
+          <button class="navbar-toggler border-0 p-0 ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="Open menu">
+            <img src="../assets/images/menu.svg" alt="" class="icon-24 theme-icon" />
+          </button>
+          <div class="collapse navbar-collapse" id="primaryNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-4">
+              <li class="nav-item"><a class="nav-link" href="index.html" aria-current="page">Work</a></li>
+              <li class="nav-item"><a class="nav-link" href="../about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="../../#contact">Contact</a></li>
+              <li class="nav-item ms-lg-2">
+                <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" aria-pressed="false">
+                  <img src="../assets/images/toggle-light.svg" alt="" class="toggle-img toggle-img--light" />
+                  <img src="../assets/images/toggle-dark.svg" alt="" class="toggle-img toggle-img--dark" />
+                </button>
+              </li>
+              <li class="nav-item ms-lg-2">
+                <a class="btn btn-primary btn-cv" href="#" download>Download my CV</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="offcanvas offcanvas-end mobile-menu" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+      <div class="offcanvas-header">
+        <span class="offcanvas-title h6 mb-0" id="mobileMenuLabel">Menu</span>
+        <button type="button" class="btn-close-custom" data-bs-dismiss="offcanvas" aria-label="Close">
+          <img src="../assets/images/close.svg" alt="" class="icon-24 theme-icon" />
+        </button>
+      </div>
+      <div class="offcanvas-body d-flex flex-column">
+        <ul class="nav flex-column gap-2 mobile-nav">
+          <li><a class="nav-link" href="index.html" data-bs-dismiss="offcanvas">Work</a></li>
+          <li><a class="nav-link" href="../about.html" data-bs-dismiss="offcanvas">About</a></li>
+          <li><a class="nav-link" href="../../#contact" data-bs-dismiss="offcanvas">Contact</a></li>
+        </ul>
+        <div class="mt-auto pt-4 d-flex flex-column gap-3">
+          <button type="button" class="theme-toggle align-self-start" id="themeToggleMobile" aria-label="Toggle dark mode">
+            <img src="../assets/images/toggle-light.svg" alt="" class="toggle-img toggle-img--light" />
+            <img src="../assets/images/toggle-dark.svg" alt="" class="toggle-img toggle-img--dark" />
+          </button>
+          <a class="btn btn-primary btn-cv" href="#" download>Download my CV</a>
+        </div>
+      </div>
+    </div>
+
+    <main id="top">
+      <section class="section-case-header">
+        <div class="container-xxl">
+          <span class="case-eyebrow">UX Audit | 99Bitcoins</span>
+          <h1 class="case-title">Crypto Price Chart UX/UI <em>Redesign</em></h1>
+          <p class="case-intro">This project involved a comprehensive UX audit and UI proposal for a cryptocurrency price chart tool. The goal was to transform a data-heavy interface into a modern, intuitive, and trustworthy experience that effectively represents price movements and historical events over time.</p>
+          <dl class="case-meta">
+            <div><dt>Role</dt><dd>Product Designer</dd></div>
+            <div><dt>Scope</dt><dd>UX Audit, Competitor Benchmarking, UI Redesign, Prototyping.</dd></div>
+            <div><dt>Tools</dt><dd>Figma</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="section-case-feature">
+        <div class="container-xxl">
+          <img src="../assets/images/99bitcoins-featured.png" alt="Crypto Price Chart UX/UI Redesign — featured visual" class="case-featured-img" />
+        </div>
+      </section>
+
+      <section class="section-case-body">
+        <div class="container-xxl">
+          <article class="case-body">
+
+<h2>The Diagnostic (UX Audit)</h2>
+<p>My evaluation was categorised into three main levels of priority:</p>
+<ul>
+  <li><strong>What Worked Well:</strong> The core functionality was solid. The tool provided a great depth of information and successfully integrated relevant historical events into the price timeline.</li>
+  <li><strong>What Needed Improvement:</strong> Identified legibility and hierarchy issues. Certain functionalities were not immediately recognisable, and the general visual treatment lacked professional polish.</li>
+  <li><strong>What Needed Fixing:</strong> Critical issues regarding the Visibility of System Status and User Control. Users had difficulty undoing changes or understanding their current state within the navigation.</li>
+</ul>
+<p>Below is a screenshot of how the chart was looking prior to the audit.</p>
+<figure><img src="../assets/images/99bitcoins-01.png" alt="The original chart prior to the audit" loading="lazy" /><figcaption>The original chart prior to the audit</figcaption></figure>
+
+<h2>Competitor Analysis (Benchmarking)</h2>
+<p>To ensure the redesign met industry standards, I analysed market leaders: CoinMarketCap, Binance, and CoinGecko.</p>
+<ul>
+  <li><strong>Insights:</strong> I focused on their use of responsive navigation, "zoom and drag" capabilities, and how they handle high-density data.</li>
+  <li><strong>Takeaway:</strong> Top-tier platforms prioritise clean layouts and intuitive hover states to manage complexity without overwhelming the user.</li>
+</ul>
+
+<h2>Identified Pain Points</h2>
+<p>Through an evaluation of the existing tool, several critical usability and visual issues were identified:</p>
+<ul>
+  <li><strong>System Visibility &amp; Control:</strong> Users had no clear way to undo changes or navigate back to previous timeframes after interacting with specific events.</li>
+  <li><strong>Cognitive Load:</strong> Very long, unformatted numbers were difficult to process at a glance.</li>
+  <li><strong>Information Hierarchy:</strong> The layout used centre-aligned text and poor column spacing, making legibility difficult in data-heavy sections.</li>
+  <li><strong>Visual Clutter:</strong> Overlapping event titles on long-term charts created visual noise, hiding the actual price movement.</li>
+  <li><strong>Visual Context:</strong> The colour palette and UI elements felt random, failing to provide a cohesive brand experience or a sense of financial security.</li>
+  <li><strong>Navigation &amp; Interaction:</strong> The "Back" button was missing or non-functional when navigating event timeframes, leaving users stuck.</li>
+</ul>
+<figure><img src="../assets/images/99bitcoins-02.png" alt="Audit annotations across the existing experience" loading="lazy" /><figcaption>Audit annotations across the existing experience</figcaption></figure>
+
+<h2>Strategic Solutions</h2>
+<p>I implemented a series of strategic design changes:</p>
+<ul>
+  <li><strong>General UI Update:</strong> Transitioned from a generic look to a polished, modern aesthetic with dedicated Light and Dark themes.</li>
+  <li><strong>Visibility &amp; Status:</strong> Improved the feedback loop so users always know which timeframe or filter is active.</li>
+  <li><strong>User Control:</strong> Added functional controls to undo changes and navigate through historical data seamlessly.</li>
+  <li><strong>Recognition over Recall:</strong> Made actions and options visible (e.g., explicit toggles for Volume and Events) so users don't have to search for tools.</li>
+  <li><strong>Data Optimisation:</strong> Implemented numerical abbreviations (e.g., $190T instead of $190,000,000,000,000) and optimised the hierarchy of price and market cap display.</li>
+</ul>
+
+<h2>Design Execution (The Result)</h2>
+<p>The final proposal features a clean, high-fidelity interface (applied to the 99Bitcoins brand) that balances density with clarity.</p>
+<ul>
+  <li><strong>Interaction Design:</strong> A new vertical cursor line and pinpoint markers on the price line allow for surgical precision when reading data.</li>
+  <li><strong>Event Management:</strong> Introduced truncated titles and compact hover states to keep the chart readable even when multiple historical events occur simultaneously.</li>
+</ul>
+<figure><img src="../assets/images/99bitcoins-03.png" alt="Final UI proposal in light and dark themes" loading="lazy" /><figcaption>Final UI proposal in light and dark themes</figcaption></figure><figure><img src="../assets/images/99bitcoins-04.png" alt="Applied to the 99Bitcoins editorial context" loading="lazy" /><figcaption>Applied to the 99Bitcoins editorial context</figcaption></figure>
+
+<h2>Lessons Learned</h2>
+<ul>
+  <li><strong>Clarity is Trust:</strong> In the crypto space, visual professionalism directly correlates with the user's perception of data accuracy.</li>
+  <li><strong>Information Architecture Matters:</strong> Even the most valuable data is useless if it's not scannable. Small changes like text alignment and number formatting significantly reduce cognitive load.</li>
+  <li><strong>Heuristics as a Compass:</strong> Applying established UX principles (like Visibility of System Status) helped transform a functional tool into a delightful user experience.</li>
+</ul>
+
+          </article>
+        </div>
+      </section>
+
+      <section class="section-case-cta">
+        <div class="container-xxl">
+          <div class="case-cta-inner">
+            <p>Like what you see? There's plenty more to explore.</p>
+            <a class="btn btn-primary" href="index.html">View all Work
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-human" id="about">
+        <div class="container-xxl">
+          <div class="row align-items-center g-4 g-lg-5">
+            <div class="col-12 col-lg-5 text-center text-lg-start">
+              <div class="human-portrait-wrap mx-auto mx-lg-0">
+                <img src="../assets/images/marta.png" alt="Portrait of Marta" class="human-portrait" />
+              </div>
+            </div>
+            <div class="col-12 col-lg-7">
+              <h2 class="section-title section-title--left">The <em>human</em> behind</h2>
+              <p class="lead-para">Hola! I'm Marta, a Product Designer with a strong visual and brand-driven approach, combining UX/UI, design systems and creative direction.</p>
+              <p>With experience across product teams, startups and agencies, I design scalable digital experiences while shaping brand identity and visual languages across platforms.</p>
+              <p>I enjoy working at the intersection of product design, brand and visual storytelling, translating research and product strategy into intuitive interfaces, cohesive design systems and distinctive digital products.</p>
+              <p>When I'm not pushing pixels, you'll find me drawing, dancing, travelling, or getting lost in nature. Driven by psychology, obsessed with good food, and always experimenting with new crafts. Life continuously gives me experiences and ideas that shape how I design.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-testimonials">
+        <div class="container-xxl">
+          <h2 class="section-title section-title--left">In their own <em>words</em></h2>
+          <div class="row g-4">
+            <div class="col-12 col-lg-4">
+              <article class="testimonial-card">
+                <img src="../assets/images/quote.svg" alt="" class="quote-mark" />
+                <p>Marta has been instrumental in defining our branding and design direction at ClickOutMedia. She proved to be a highly skilled product designer and an outstanding collaborator, consistently adding value to every project.</p>
+                <p>Marta adapted easily to new challenges, always bringing thoughtful, user-focused solutions. Her versatility and positive attitude made her a pleasure to work with, and her impact on our design culture will be felt long after her time with the team.</p>
+                <hr class="testimonial-rule" />
+                <footer class="testimonial-author">
+                  <span class="testimonial-avatar testimonial-avatar--blue" aria-hidden="true">TJ</span>
+                  <span class="testimonial-meta"><strong>Thinesh Jegan</strong><span>Head of Design</span></span>
+                </footer>
+              </article>
+            </div>
+            <div class="col-12 col-lg-4">
+              <article class="testimonial-card">
+                <img src="../assets/images/quote.svg" alt="" class="quote-mark" />
+                <p>I hired Marta while working at Pickatale, an ed tech start up. From the moment she joined she was such a joy to work with, always calm, professional and providing great feedback and a great team player.</p>
+                <p>At Pickatale we had some very intense projects and deadlines to meet, and I can definitely say we wouldn't have accomplished meeting and exceeding those expectations without her help.</p>
+                <hr class="testimonial-rule" />
+                <footer class="testimonial-author">
+                  <span class="testimonial-avatar testimonial-avatar--pink" aria-hidden="true">VP</span>
+                  <span class="testimonial-meta"><strong>Valerie Paur</strong><span>Lead Product Designer</span></span>
+                </footer>
+              </article>
+            </div>
+            <div class="col-12 col-lg-4">
+              <article class="testimonial-card">
+                <img src="../assets/images/quote.svg" alt="" class="quote-mark" />
+                <p>Working with Marta has been a great experience. She is highly organised and genuinely creative, with a strong ability to craft cohesive, thoughtful, and high-quality interfaces and branding.</p>
+                <p>Her Figma files reflect real product maturity; she knows how to optimise files and build systems that are clean, scalable, and collaborative.</p>
+                <p>Beyond her technical strengths, Marta brings radiant, positive energy to the team. She combines structure, creativity, and team spirit in a rare and valuable way.</p>
+                <hr class="testimonial-rule" />
+                <footer class="testimonial-author">
+                  <span class="testimonial-avatar testimonial-avatar--dark" aria-hidden="true">FG</span>
+                  <span class="testimonial-meta"><strong>Florian Gouloubi</strong><span>Senior Product Designer</span></span>
+                </footer>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-contact" id="contact">
+        <div class="container-xxl">
+          <div class="contact-card text-center">
+            <h2 class="contact-title">Say <em>Hola!</em></h2>
+            <p class="contact-lead">Drop me a line at <a href="mailto:cleonmarta@gmail.com">cleonmarta@gmail.com</a></p>
+            <div class="contact-links">
+              <p>Have a look at <a href="#">My CV</a></p>
+              <p>Beyond the grid: <a href="#">My Illustrations</a></p>
+            </div>
+            <ul class="contact-socials list-unstyled d-flex justify-content-center gap-3 mb-0">
+              <li><a href="#" aria-label="Dribbble" class="social-link"><img src="../assets/images/dribbble.svg" alt="" class="icon-24 theme-icon" /></a></li>
+              <li><a href="#" aria-label="LinkedIn" class="social-link"><img src="../assets/images/linkedin.svg" alt="" class="icon-24 theme-icon" /></a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container-xxl">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+          <p class="mb-0 footer-copy">© 2026 Marta Colmenero. Designed &amp; built with care.</p>
+          <a href="#top" class="footer-back-top">
+            Back to top
+            <img src="../assets/images/arrow-up.svg" alt="" class="btn-icon-end" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>

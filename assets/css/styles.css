@@ -29,7 +29,7 @@
   --mc-radius-lg: 28px;
   --mc-radius-xl: 36px;
 
-  --mc-nav-height: 80px;
+  --mc-nav-height: 64px;
 }
 
 [data-bs-theme='dark'] {
@@ -1020,4 +1020,17 @@ section {
 }
 .mobile-nav .nav-link {
   display: block;
+}
+
+/* Soft fade at the foot of the hero so the blob edge blends into the page (no hard line) */
+.hero::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 160px;
+  background: linear-gradient(to bottom, transparent, var(--mc-bg));
+  pointer-events: none;
+  z-index: 0;
 }

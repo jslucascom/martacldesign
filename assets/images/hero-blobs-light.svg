@@ -48,7 +48,8 @@
   <defs>
     <filter id="filter_top_morph" x="0" y="0" width="1512" height="727.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
       <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="sharpShape"/>
+      <feGaussianBlur in="sharpShape" stdDeviation="10" result="shape"/>
       <feTurbulence type="fractalNoise" baseFrequency="0.5 0.5" stitchTiles="stitch" numOctaves="3" result="noise" seed="5666"/>
       <feColorMatrix in="noise" type="luminanceToAlpha" result="alphaNoise"/>
       <feComponentTransfer in="alphaNoise" result="coloredNoise1">
@@ -65,7 +66,8 @@
 
     <filter id="filter_bottom_morph" x="0" y="402.847" width="1512" height="784.757" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
       <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="sharpShape"/>
+      <feGaussianBlur in="sharpShape" stdDeviation="10" result="shape"/>
       <feTurbulence type="fractalNoise" baseFrequency="0.5 0.5" stitchTiles="stitch" numOctaves="3" result="noise" seed="5666"/>
       <feColorMatrix in="noise" type="luminanceToAlpha" result="alphaNoise"/>
       <feComponentTransfer in="alphaNoise" result="coloredNoise1">

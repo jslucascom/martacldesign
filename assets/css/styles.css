@@ -779,6 +779,15 @@ section {
 .case-eyebrow {
   max-width: 780px;
 }
+/* Centre the case-study header as a centred column (text stays left-aligned,
+   matching the body copy below the image) */
+.section-case-header .case-eyebrow,
+.section-case-header .case-title,
+.section-case-header .case-intro,
+.section-case-header .case-meta {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .case-intro {
   max-width: 780px;

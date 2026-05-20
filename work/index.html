@@ -42,16 +42,15 @@
           <a class="navbar-brand d-flex align-items-center" href="../" aria-label="Marta Colmenero — home">
             <img src="../assets/images/logo.svg" alt="Marta Colmenero" class="brand-logo" />
           </a>
-          <button
-            class="navbar-toggler border-0 p-0 ms-auto"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#mobileMenu"
-            aria-controls="mobileMenu"
-            aria-label="Open menu"
-          >
-            <img src="../assets/images/menu.svg" alt="" class="icon-24 theme-icon" />
-          </button>
+          <div class="d-flex align-items-center ms-auto d-lg-none">
+            <button type="button" class="theme-toggle nav-toggle-mobile" aria-label="Toggle dark mode" aria-pressed="false">
+              <img src="../assets/images/toggle-light.svg" alt="" class="toggle-img toggle-img--light" />
+              <img src="../assets/images/toggle-dark.svg" alt="" class="toggle-img toggle-img--dark" />
+            </button>
+            <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="Open menu">
+              <img src="../assets/images/menu.svg" alt="" class="icon-24 theme-icon" />
+            </button>
+          </div>
           <div class="collapse navbar-collapse" id="primaryNav">
             <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-4">
               <li class="nav-item"><a class="nav-link" href="index.html" aria-current="page">Work</a></li>
@@ -74,22 +73,27 @@
 
     <div class="offcanvas offcanvas-end mobile-menu" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
       <div class="offcanvas-header">
-        <span class="offcanvas-title h6 mb-0" id="mobileMenuLabel">Menu</span>
-        <button type="button" class="btn-close-custom" data-bs-dismiss="offcanvas" aria-label="Close">
-          <img src="../assets/images/close.svg" alt="" class="icon-24 theme-icon" />
-        </button>
+        <a class="mobile-menu-brand" href="../index.html" id="mobileMenuLabel" data-bs-dismiss="offcanvas" aria-label="Marta Colmenero — home">
+          <img src="../assets/images/logo.svg" alt="Marta Colmenero" class="brand-logo" />
+        </a>
+        <div class="offcanvas-header-actions">
+          <button type="button" class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false">
+            <img src="../assets/images/toggle-light.svg" alt="" class="toggle-img toggle-img--light" />
+            <img src="../assets/images/toggle-dark.svg" alt="" class="toggle-img toggle-img--dark" />
+          </button>
+          <button type="button" class="btn-close-custom" data-bs-dismiss="offcanvas" aria-label="Close">
+            <img src="../assets/images/close.svg" alt="" class="icon-24 theme-icon" />
+          </button>
+        </div>
       </div>
       <div class="offcanvas-body d-flex flex-column">
-        <ul class="nav flex-column gap-2 mobile-nav">
+        <ul class="nav flex-column mobile-nav">
+          <li><a class="nav-link" href="../index.html" data-bs-dismiss="offcanvas">Homepage</a></li>
           <li><a class="nav-link" href="index.html" data-bs-dismiss="offcanvas">Work</a></li>
           <li><a class="nav-link" href="../about.html" data-bs-dismiss="offcanvas">About</a></li>
           <li><a class="nav-link" href="../#contact" data-bs-dismiss="offcanvas">Contact</a></li>
         </ul>
         <div class="mt-auto pt-4 d-flex flex-column gap-3">
-          <button type="button" class="theme-toggle align-self-start" id="themeToggleMobile" aria-label="Toggle dark mode">
-            <img src="../assets/images/toggle-light.svg" alt="" class="toggle-img toggle-img--light" />
-            <img src="../assets/images/toggle-dark.svg" alt="" class="toggle-img toggle-img--dark" />
-          </button>
           <a class="btn btn-primary btn-cv" href="#" download>Download my CV</a>
         </div>
       </div>

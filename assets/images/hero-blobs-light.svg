@@ -50,12 +50,16 @@
       <feFlood flood-opacity="0" result="BackgroundImageFix"/>
       <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="sharpShape"/>
       <feGaussianBlur in="sharpShape" stdDeviation="16" result="shape"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation="40" result="edgeWide"/>
+      <feComponentTransfer in="edgeWide" result="edgeBand">
+        <feFuncA type="table" tableValues="0 1 0"/>
+      </feComponentTransfer>
       <feTurbulence type="fractalNoise" baseFrequency="0.5 0.5" stitchTiles="stitch" numOctaves="3" result="noise" seed="5666"/>
       <feColorMatrix in="noise" type="luminanceToAlpha" result="alphaNoise"/>
       <feComponentTransfer in="alphaNoise" result="coloredNoise1">
         <feFuncA type="discrete" tableValues="0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
       </feComponentTransfer>
-      <feComposite operator="in" in2="shape" in="coloredNoise1" result="noise1Clipped"/>
+      <feComposite operator="in" in2="edgeBand" in="coloredNoise1" result="noise1Clipped"/>
       <feFlood flood-color="#FBF8F7" flood-opacity="0.7" result="color1Flood"/>
       <feComposite operator="in" in2="noise1Clipped" in="color1Flood" result="color1"/>
       <feMerge>
@@ -68,12 +72,16 @@
       <feFlood flood-opacity="0" result="BackgroundImageFix"/>
       <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="sharpShape"/>
       <feGaussianBlur in="sharpShape" stdDeviation="16" result="shape"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation="40" result="edgeWide"/>
+      <feComponentTransfer in="edgeWide" result="edgeBand">
+        <feFuncA type="table" tableValues="0 1 0"/>
+      </feComponentTransfer>
       <feTurbulence type="fractalNoise" baseFrequency="0.5 0.5" stitchTiles="stitch" numOctaves="3" result="noise" seed="5666"/>
       <feColorMatrix in="noise" type="luminanceToAlpha" result="alphaNoise"/>
       <feComponentTransfer in="alphaNoise" result="coloredNoise1">
         <feFuncA type="discrete" tableValues="0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
       </feComponentTransfer>
-      <feComposite operator="in" in2="shape" in="coloredNoise1" result="noise1Clipped"/>
+      <feComposite operator="in" in2="edgeBand" in="coloredNoise1" result="noise1Clipped"/>
       <feFlood flood-color="#FBF8F7" flood-opacity="0.7" result="color1Flood"/>
       <feComposite operator="in" in2="noise1Clipped" in="color1Flood" result="color1"/>
       <feMerge>

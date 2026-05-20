@@ -50,7 +50,27 @@
   }
 
   document.addEventListener('DOMContentLoaded', function () {
-    bindToggle(document.getElementById('themeToggle'));
-    bindToggle(document.getElementById('themeToggleMobile'));
+    // Bind every theme toggle on the page (header, mobile header, drawer)
+    document.querySelectorAll('.theme-toggle').forEach(bindToggle);
+
+    // Testimonials carousel (amend 02): one-at-a-time swipe on mobile,
+    // 3-up grid on desktop. watchOverflow disables dragging when slides fit.
+    if (window.Swiper) {
+      document.querySelectorAll('.testimonial-swiper').forEach(function (el) {
+        new window.Swiper(el, {
+          slidesPerView: 1,
+          spaceBetween: 24,
+          loop: false,
+          watchOverflow: true,
+          pagination: {
+            el: el.querySelector('.swiper-pagination'),
+            clickable: true
+          },
+          breakpoints: {
+            992: { slidesPerView: 3, spaceBetween: 40 }
+          }
+        });
+      });
+    }
   });
 })();

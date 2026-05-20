@@ -41,6 +41,8 @@
     />
 
     <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg" />
+    <!-- Swiper (testimonials carousel) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
@@ -52,20 +54,31 @@
             <img src="assets/images/logo.svg" alt="Marta Colmenero" class="brand-logo" />
           </a>
 
-          <button
-            class="navbar-toggler border-0 p-0 ms-auto"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#mobileMenu"
-            aria-controls="mobileMenu"
-            aria-label="Open menu"
-          >
-            <img src="assets/images/menu.svg" alt="" class="icon-24 theme-icon" />
-          </button>
+          <div class="d-flex align-items-center ms-auto d-lg-none">
+            <button
+              type="button"
+              class="theme-toggle nav-toggle-mobile"
+              aria-label="Toggle dark mode"
+              aria-pressed="false"
+            >
+              <img src="assets/images/toggle-light.svg" alt="" class="toggle-img toggle-img--light" />
+              <img src="assets/images/toggle-dark.svg" alt="" class="toggle-img toggle-img--dark" />
+            </button>
+            <button
+              class="navbar-toggler border-0 p-0"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#mobileMenu"
+              aria-controls="mobileMenu"
+              aria-label="Open menu"
+            >
+              <img src="assets/images/menu.svg" alt="" class="icon-24 theme-icon" />
+            </button>
+          </div>
 
           <div class="collapse navbar-collapse" id="primaryNav">
             <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-4">
-              <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+              <li class="nav-item"><a class="nav-link" href="work/index.html">Work</a></li>
               <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
               <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
               <li class="nav-item ms-lg-2">
@@ -105,32 +118,37 @@
       aria-labelledby="mobileMenuLabel"
     >
       <div class="offcanvas-header">
-        <span class="offcanvas-title h6 mb-0" id="mobileMenuLabel">Menu</span>
-        <button
-          type="button"
-          class="btn-close-custom"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        >
-          <img src="assets/images/close.svg" alt="" class="icon-24 theme-icon" />
-        </button>
-      </div>
-      <div class="offcanvas-body d-flex flex-column">
-        <ul class="nav flex-column gap-2 mobile-nav">
-          <li><a class="nav-link" href="#work" data-bs-dismiss="offcanvas">Work</a></li>
-          <li><a class="nav-link" href="about.html" data-bs-dismiss="offcanvas">About</a></li>
-          <li><a class="nav-link" href="#contact" data-bs-dismiss="offcanvas">Contact</a></li>
-        </ul>
-        <div class="mt-auto pt-4 d-flex flex-column gap-3">
+        <a class="mobile-menu-brand" href="index.html" id="mobileMenuLabel" data-bs-dismiss="offcanvas" aria-label="Marta Colmenero — home">
+          <img src="assets/images/logo.svg" alt="Marta Colmenero" class="brand-logo" />
+        </a>
+        <div class="offcanvas-header-actions">
           <button
             type="button"
-            class="theme-toggle align-self-start"
-            id="themeToggleMobile"
+            class="theme-toggle"
             aria-label="Toggle dark mode"
+            aria-pressed="false"
           >
             <img src="assets/images/toggle-light.svg" alt="" class="toggle-img toggle-img--light" />
             <img src="assets/images/toggle-dark.svg" alt="" class="toggle-img toggle-img--dark" />
           </button>
+          <button
+            type="button"
+            class="btn-close-custom"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          >
+            <img src="assets/images/close.svg" alt="" class="icon-24 theme-icon" />
+          </button>
+        </div>
+      </div>
+      <div class="offcanvas-body d-flex flex-column">
+        <ul class="nav flex-column mobile-nav">
+          <li><a class="nav-link" href="index.html" data-bs-dismiss="offcanvas">Homepage</a></li>
+          <li><a class="nav-link" href="work/index.html" data-bs-dismiss="offcanvas">Work</a></li>
+          <li><a class="nav-link" href="about.html" data-bs-dismiss="offcanvas">About</a></li>
+          <li><a class="nav-link" href="#contact" data-bs-dismiss="offcanvas">Contact</a></li>
+        </ul>
+        <div class="mt-auto pt-4 d-flex flex-column gap-3">
           <a class="btn btn-primary btn-cv" href="#" download>Download my CV</a>
         </div>
       </div>
@@ -171,8 +189,6 @@
       <!-- ==========================  SELECTED WORK  ========================== -->
       <section class="section-work" id="work">
         <div class="container-xxl">
-          <h2 class="section-title text-center">Selected <em>Work</em></h2>
-
           <div class="row g-4 work-grid">
             <div class="col-12 col-lg-6">
               <a class="work-card" href="work/clickout-media.html">
@@ -284,8 +300,9 @@
         <div class="container-xxl">
           <h2 class="section-title section-title--left">In their own <em>words</em></h2>
 
-          <div class="row g-4">
-            <div class="col-12 col-lg-4">
+          <div class="swiper testimonial-swiper">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide">
               <article class="testimonial-card">
                 <img src="assets/images/quote.svg" alt="" class="quote-mark" />
                 <p>
@@ -310,7 +327,7 @@
                 </footer>
               </article>
             </div>
-            <div class="col-12 col-lg-4">
+            <div class="swiper-slide">
               <article class="testimonial-card">
                 <img src="assets/images/quote.svg" alt="" class="quote-mark" />
                 <p>
@@ -333,7 +350,7 @@
                 </footer>
               </article>
             </div>
-            <div class="col-12 col-lg-4">
+            <div class="swiper-slide">
               <article class="testimonial-card">
                 <img src="assets/images/quote.svg" alt="" class="quote-mark" />
                 <p>
@@ -360,6 +377,8 @@
                 </footer>
               </article>
             </div>
+            </div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </section>
@@ -413,6 +432,8 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <!-- Swiper (testimonials carousel) -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>

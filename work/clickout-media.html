@@ -1,293 +1,382 @@
 <!doctype html>
 <html lang="en" data-bs-theme="light">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>One brand, one voice: ClickOut Media rebrand — Marta Colmenero</title>
-    <meta name="description" content="A complete rebrand of ClickOut Media — unifying split identities into one cohesive brand, with a new website, design system, and full asset suite." />
 
-    <script>
-      (function () {
-        try {
-          var stored = localStorage.getItem('marta-theme');
-          if (stored === 'dark' || stored === 'light') {
-            document.documentElement.setAttribute('data-bs-theme', stored);
-          }
-        } catch (_) {}
-      })();
-    </script>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>One brand, one voice: ClickOut Media rebrand — Marta Colmenero</title>
+	<meta name="description"
+		content="A complete rebrand of ClickOut Media — unifying split identities into one cohesive brand, with a new website, design system, and full asset suite." />
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" type="image/svg+xml" href="../assets/images/logo.svg" />
-    <!-- Swiper (testimonials carousel) -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="../assets/css/styles.css" />
-  </head>
-  <body>
-    <header class="site-nav fixed-top">
-      <div class="container-xxl">
-        <nav class="navbar navbar-expand-lg py-3" aria-label="Primary">
-          <a class="navbar-brand d-flex align-items-center" href="index.html" aria-label="Marta Colmenero — home">
-            <img src="../assets/images/logo.svg" alt="Marta Colmenero" class="brand-logo" />
-          </a>
-          <div class="d-flex align-items-center ms-auto d-lg-none">
-            <button type="button" class="theme-toggle nav-toggle-mobile" aria-label="Toggle dark mode" aria-pressed="false">
-              <img src="../assets/images/toggle-light.svg" alt="" class="toggle-img toggle-img--light" />
-              <img src="../assets/images/toggle-dark.svg" alt="" class="toggle-img toggle-img--dark" />
-            </button>
-            <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="Open menu">
-              <img src="../assets/images/menu.svg" alt="" class="icon-24 theme-icon" />
-            </button>
-          </div>
-          <div class="collapse navbar-collapse" id="primaryNav">
-            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-4">
-              <li class="nav-item"><a class="nav-link" href="index.html" aria-current="page">Work</a></li>
-              <li class="nav-item"><a class="nav-link" href="../about.html">About</a></li>
-              <li class="nav-item"><a class="nav-link" href="../../#contact">Contact</a></li>
-              <li class="nav-item ms-lg-2">
-                <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" aria-pressed="false">
-                  <img src="../assets/images/toggle-light.svg" alt="" class="toggle-img toggle-img--light" />
-                  <img src="../assets/images/toggle-dark.svg" alt="" class="toggle-img toggle-img--dark" />
-                </button>
-              </li>
-              <li class="nav-item ms-lg-2">
-                <a class="btn btn-primary btn-cv" href="#" download>Download my CV</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </header>
+	<script>
+		(function () {
+			try {
+				var stored = localStorage.getItem('marta-theme');
+				if (stored === 'dark' || stored === 'light') {
+					document.documentElement.setAttribute('data-bs-theme', stored);
+				}
+			} catch (_) { }
+		})();
+	</script>
 
-    <div class="offcanvas offcanvas-end mobile-menu" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
-      <div class="offcanvas-header">
-        <a class="mobile-menu-brand" href="../index.html" id="mobileMenuLabel" data-bs-dismiss="offcanvas" aria-label="Marta Colmenero — home">
-          <img src="../assets/images/logo.svg" alt="Marta Colmenero" class="brand-logo" />
-        </a>
-        <div class="offcanvas-header-actions">
-          <button type="button" class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false">
-            <img src="../assets/images/toggle-light.svg" alt="" class="toggle-img toggle-img--light" />
-            <img src="../assets/images/toggle-dark.svg" alt="" class="toggle-img toggle-img--dark" />
-          </button>
-          <button type="button" class="btn-close-custom" data-bs-dismiss="offcanvas" aria-label="Close">
-            <img src="../assets/images/close.svg" alt="" class="icon-24 theme-icon" />
-          </button>
-        </div>
-      </div>
-      <div class="offcanvas-body d-flex flex-column">
-        <ul class="nav flex-column mobile-nav">
-          <li><a class="nav-link" href="../index.html" data-bs-dismiss="offcanvas">Homepage</a></li>
-          <li><a class="nav-link" href="index.html" data-bs-dismiss="offcanvas">Work</a></li>
-          <li><a class="nav-link" href="../about.html" data-bs-dismiss="offcanvas">About</a></li>
-          <li><a class="nav-link" href="../../#contact" data-bs-dismiss="offcanvas">Contact</a></li>
-        </ul>
-        <div class="mt-auto pt-4 d-flex flex-column gap-3">
-          <a class="btn btn-primary btn-cv" href="#" download>Download my CV</a>
-        </div>
-      </div>
-    </div>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Inter:wght@400;500;600;700&display=swap"
+		rel="stylesheet" />
+	<link rel="icon" type="image/svg+xml" href="../assets/images/logo.svg" />
+	<!-- Swiper (testimonials carousel) -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
 
-    <main id="top">
-      <section class="section-case-header">
-        <div class="container-xxl">
-          <span class="case-eyebrow">UX/UI Design, Branding, Web Design | ClickOut Media</span>
-          <h1 class="case-title">One brand, one voice: ClickOut Media <em>rebrand</em></h1>
-          <p class="case-intro">A comprehensive overhaul of ClickOut Media's brand and digital presence. My role involved unifying a split identity into one cohesive brand applied across every touchpoint, designing a scalable design system and launching a reimagined website that bridges the gap between partners and career-seekers.</p>
-          <dl class="case-meta">
-            <div><dt>Role</dt><dd>Product &amp; Brand Designer</dd></div>
-            <div><dt>Scope</dt><dd>Brand Strategy, Visual Identity, Design System, UX/UI.</dd></div>
-            <div><dt>Tools</dt><dd>Figma / Illustrator</dd></div>
-          </dl>
-        </div>
-      </section>
+<body>
+	<header class="site-nav fixed-top">
+		<div class="container-xxl">
+			<nav class="navbar navbar-expand-lg py-3" aria-label="Primary">
+				<a class="navbar-brand d-flex align-items-center" href="index.html" aria-label="Marta Colmenero — home">
+					<img src="../assets/images/logo.svg" alt="Marta Colmenero" class="brand-logo" />
+				</a>
+				<div class="d-flex align-items-center ms-auto d-lg-none">
+					<button type="button" class="theme-toggle nav-toggle-mobile" aria-label="Toggle dark mode"
+						aria-pressed="false">
+						<img src="../assets/images/toggle-light.svg" alt="" class="toggle-img toggle-img--light" />
+						<img src="../assets/images/toggle-dark.svg" alt="" class="toggle-img toggle-img--dark" />
+					</button>
+					<button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="offcanvas"
+						data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="Open menu">
+						<img src="../assets/images/menu.svg" alt="" class="icon-24 theme-icon" />
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="primaryNav">
+					<ul class="navbar-nav ms-auto align-items-lg-center gap-lg-4">
+						<li class="nav-item"><a class="nav-link" href="index.html" aria-current="page">Work</a></li>
+						<li class="nav-item"><a class="nav-link" href="../about.html">About</a></li>
+						<li class="nav-item"><a class="nav-link" href="../../#contact">Contact</a></li>
+						<li class="nav-item ms-lg-2">
+							<button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"
+								aria-pressed="false">
+								<img src="../assets/images/toggle-light.svg" alt=""
+									class="toggle-img toggle-img--light" />
+								<img src="../assets/images/toggle-dark.svg" alt=""
+									class="toggle-img toggle-img--dark" />
+							</button>
+						</li>
+						<li class="nav-item ms-lg-2">
+							<a class="btn btn-primary btn-cv" href="../assets/cv/cv-martacolmenero.pdf" target="_blank" rel="noopener">Download my CV</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
 
-      <section class="section-case-feature">
-        <div class="container-xxl">
-          <img src="../assets/images/projects-img/ClickOut%20Media%201.png" alt="One brand, one voice: ClickOut Media rebrand — featured visual" class="case-featured-img" />
-        </div>
-      </section>
+	<div class="offcanvas offcanvas-end mobile-menu" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+		<div class="offcanvas-header">
+			<a class="mobile-menu-brand" href="../index.html" id="mobileMenuLabel" data-bs-dismiss="offcanvas"
+				aria-label="Marta Colmenero — home">
+				<img src="../assets/images/logo.svg" alt="Marta Colmenero" class="brand-logo" />
+			</a>
+			<div class="offcanvas-header-actions">
+				<button type="button" class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false">
+					<img src="../assets/images/toggle-light.svg" alt="" class="toggle-img toggle-img--light" />
+					<img src="../assets/images/toggle-dark.svg" alt="" class="toggle-img toggle-img--dark" />
+				</button>
+				<button type="button" class="btn-close-custom" data-bs-dismiss="offcanvas" aria-label="Close">
+					<img src="../assets/images/close.svg" alt="" class="icon-24 theme-icon" />
+				</button>
+			</div>
+		</div>
+		<div class="offcanvas-body d-flex flex-column">
+			<ul class="nav flex-column mobile-nav">
+				<li><a class="nav-link" href="../index.html" data-bs-dismiss="offcanvas">Homepage</a></li>
+				<li><a class="nav-link" href="index.html" data-bs-dismiss="offcanvas">Work</a></li>
+				<li><a class="nav-link" href="../about.html" data-bs-dismiss="offcanvas">About</a></li>
+				<li><a class="nav-link" href="../../#contact" data-bs-dismiss="offcanvas">Contact</a></li>
+			</ul>
+			<div class="mt-auto pt-4 d-flex flex-column gap-3">
+				<a class="btn btn-primary btn-cv" href="../assets/cv/cv-martacolmenero.pdf" target="_blank" rel="noopener">Download my CV</a>
+			</div>
+		</div>
+	</div>
 
-      <section class="section-case-body">
-        <div class="container-xxl">
-          <article class="case-body">
+	<main id="top">
+		<section class="section-case-header">
+			<div class="container-xxl">
+				<span class="case-eyebrow">UX/UI Design, Branding, Web Design | ClickOut Media</span>
+				<h1 class="case-title">One brand, one voice: ClickOut Media <em>rebrand</em></h1>
+				<p class="case-intro">A comprehensive overhaul of ClickOut Media's brand and digital presence. My role
+					involved unifying a split identity into one cohesive brand applied across every touchpoint,
+					designing a scalable design system and launching a reimagined website that bridges the gap between
+					partners and career-seekers.</p>
+				<dl class="case-meta">
+					<div>
+						<dt>Role</dt>
+						<dd>Product &amp; Brand Designer</dd>
+					</div>
+					<div>
+						<dt>Scope</dt>
+						<dd>Brand Strategy, Visual Identity, Design System, UX/UI.</dd>
+					</div>
+					<div>
+						<dt>Tools</dt>
+						<dd>Figma / Illustrator</dd>
+					</div>
+				</dl>
+			</div>
+		</section>
 
-<h2>The Problem</h2>
-<p>ClickOut Media is an international affiliate marketing company reaching 50M+ monthly users across crypto, finance, and tech publications. When I joined, the company had two separate logos, two websites, and no unified visual language — a fragmented identity that didn't reflect the scale or ambition of the business.</p>
-<p>The brief was clear: build one brand. Cohesive, scalable, and bold enough to hold up across every touchpoint — from the main website to the affiliate platform, social media, internal decks, and beyond.</p>
+		<section class="section-case-feature">
+			<div class="container-xxl">
+				<img src="../assets/images/projects-img/ClickOut%20Media%201.png"
+					alt="One brand, one voice: ClickOut Media rebrand — featured visual" class="case-featured-img" />
+			</div>
+		</section>
 
-<h2>My Role</h2>
-<p>I led the full visual and brand direction of this project, from initial strategy and exploration through to execution and company-wide rollout. This included defining the new brand identity, building the design system and brand guidelines, designing the website, updating the affiliate platform, and creating the full suite of cross-platform assets. I also presented the rebrand internally to the wider team through a dedicated launch deck.</p>
+		<section class="section-case-body">
+			<div class="container-xxl">
+				<article class="case-body">
 
-<h2>The Strategy</h2>
-<p>The goal was to make the brand feel bolder, sharper and future-proofed. I moved the identity away from looking like an outdated, small affiliate network towards a "Global Media" look. This meant:</p>
-<ul>
-  <li><strong>One Logo:</strong> I cleaned up the logo to make it simpler and easier to read.</li>
-  <li>A modern and contemporary visual system with strong foundations and recognisable identity.</li>
-  <li>A Design System, easily scalable and with strong foundations.</li>
-  <li>Brand Guidelines, aimed for everyone in the company, giving them the ability to translate any business requirement in line with our brand.</li>
-  <li>Brand collateral and assets for all employees, ready to use and implement.</li>
-</ul>
-<figure><img src="../assets/images/projects-img/img.png" alt="Logo evolution and brand exploration" loading="lazy" /><figcaption>Logo evolution and brand exploration</figcaption></figure>
+					<h2>The Problem</h2>
+					<p>ClickOut Media is an international affiliate marketing company reaching 50M+ monthly users across
+						crypto, finance, and tech publications. When I joined, the company had two separate logos, two
+						websites, and no unified visual language — a fragmented identity that didn't reflect the scale
+						or ambition of the business.</p>
+					<p>The brief was clear: build one brand. Cohesive, scalable, and bold enough to hold up across every
+						touchpoint — from the main website to the affiliate platform, social media, internal decks, and
+						beyond.</p>
 
-<h2>The Website &amp; Affiliate Platform Redesign</h2>
-<p>The website was reimagined with a remarkable interface, combining the different elements of our new brand to bring it to life — bold and clean colour, strong and clear typography, modern illustrations, custom iconography and organic lines.</p>
-<p>The new design included asymmetrical and fluid layouts that create a sense of movement, flow and depth.</p>
-<p>We moved towards a single website, which aligns all our sources into a unified brand and site, giving users a global understanding of who we are, what we do and what it means to be part of the business.</p>
-<p>The affiliate platform UI was updated to align with the new visual identity — bringing the same colour system, typography and component language into the logged-in experience, so the brand felt consistent from first impression to daily use.</p>
-<figure><img src="../assets/images/projects-img/img-2.png" alt="Website and affiliate platform UI" loading="lazy" /><figcaption>Website and affiliate platform UI</figcaption></figure>
+					<h2>My Role</h2>
+					<p>I led the full visual and brand direction of this project, from initial strategy and exploration
+						through to execution and company-wide rollout. This included defining the new brand identity,
+						building the design system and brand guidelines, designing the website, updating the affiliate
+						platform, and creating the full suite of cross-platform assets. I also presented the rebrand
+						internally to the wider team through a dedicated launch deck.</p>
 
-<h2>The Design System</h2>
-<p>Beyond the identity, the project required a full visual system that teams could use day to day. This included custom iconography designed to be geometric and minimalistic, illustrations using rounded shapes and palette gradients, organic line elements for background depth, and a graphics system built around product UI components.</p>
-<p>The system was built to scale — clear enough that anyone on the team could apply it correctly, flexible enough to work across web, social, email and print.</p>
-<figure><img src="../assets/images/projects-img/img-1.png" alt="Components, illustrations and asset library" loading="lazy" /><figcaption>Components, illustrations and asset library</figcaption></figure>
+					<h2>The Strategy</h2>
+					<p>The goal was to make the brand feel bolder, sharper and future-proofed. I moved the identity away
+						from looking like an outdated, small affiliate network towards a "Global Media" look. This
+						meant:</p>
+					<ul>
+						<li><strong>One Logo:</strong> I cleaned up the logo to make it simpler and easier to read.</li>
+						<li>A modern and contemporary visual system with strong foundations and recognisable identity.
+						</li>
+						<li>A Design System, easily scalable and with strong foundations.</li>
+						<li>Brand Guidelines, aimed for everyone in the company, giving them the ability to translate
+							any business requirement in line with our brand.</li>
+						<li>Brand collateral and assets for all employees, ready to use and implement.</li>
+					</ul>
+					<figure><img src="../assets/images/projects-img/img.png" alt="Logo evolution and brand exploration"
+							loading="lazy" />
+						<figcaption>Logo evolution and brand exploration</figcaption>
+					</figure>
 
-<h2>A Rollout Made for Everyone</h2>
-<p>This brand was built to be used by everyone in a simple and straightforward way. Not only for the product design team, but also having in mind every employee and aspect of our new brand. I rolled out new tools, assets, templates, and resources to make the transition simple, in shared folders easily reachable. Those included:</p>
-<ul>
-  <li>Easy-to-follow brand guidelines.</li>
-  <li>Ready-to-use folders with all the new logos, icons and visual assets.</li>
-  <li>New templates for Google Slides and email signatures.</li>
-</ul>
+					<h2>The Website &amp; Affiliate Platform Redesign</h2>
+					<p>The website was reimagined with a remarkable interface, combining the different elements of our
+						new brand to bring it to life — bold and clean colour, strong and clear typography, modern
+						illustrations, custom iconography and organic lines.</p>
+					<p>The new design included asymmetrical and fluid layouts that create a sense of movement, flow and
+						depth.</p>
+					<p>We moved towards a single website, which aligns all our sources into a unified brand and site,
+						giving users a global understanding of who we are, what we do and what it means to be part of
+						the business.</p>
+					<p>The affiliate platform UI was updated to align with the new visual identity — bringing the same
+						colour system, typography and component language into the logged-in experience, so the brand
+						felt consistent from first impression to daily use.</p>
+					<figure><img src="../assets/images/projects-img/img-2.png" alt="Website and affiliate platform UI"
+							loading="lazy" />
+						<figcaption>Website and affiliate platform UI</figcaption>
+					</figure>
 
-<h2>The Results</h2>
-<p>The new brand was successfully rolled out across all platforms, ready to use and implement in a seamless and smooth way.</p>
-<ul>
-  <li>Unified two fragmented brand identities into a single cohesive visual system, rolled out across all company touchpoints.</li>
-  <li>Designed and launched a new website replacing two separate platforms, serving a company with 50M+ monthly users and 200+ media partners.</li>
-  <li>Built a complete design system and brand guidelines adopted across the full team, from product and marketing to external communications.</li>
-  <li>Updated the affiliate platform UI to align with the new brand, improving consistency across the product ecosystem.</li>
-  <li>Created a full suite of cross-platform assets including social templates, email signatures, internal decks and presentation templates.</li>
-</ul>
+					<h2>The Design System</h2>
+					<p>Beyond the identity, the project required a full visual system that teams could use day to day.
+						This included custom iconography designed to be geometric and minimalistic, illustrations using
+						rounded shapes and palette gradients, organic line elements for background depth, and a graphics
+						system built around product UI components.</p>
+					<p>The system was built to scale — clear enough that anyone on the team could apply it correctly,
+						flexible enough to work across web, social, email and print.</p>
+					<figure><img src="../assets/images/projects-img/img-1.png"
+							alt="Components, illustrations and asset library" loading="lazy" />
+						<figcaption>Components, illustrations and asset library</figcaption>
+					</figure>
 
-          </article>
-        </div>
-      </section>
+					<h2>A Rollout Made for Everyone</h2>
+					<p>This brand was built to be used by everyone in a simple and straightforward way. Not only for the
+						product design team, but also having in mind every employee and aspect of our new brand. I
+						rolled out new tools, assets, templates, and resources to make the transition simple, in shared
+						folders easily reachable. Those included:</p>
+					<ul>
+						<li>Easy-to-follow brand guidelines.</li>
+						<li>Ready-to-use folders with all the new logos, icons and visual assets.</li>
+						<li>New templates for Google Slides and email signatures.</li>
+					</ul>
 
-      <section class="section-case-cta">
-        <div class="container-xxl">
-          <div class="case-cta-inner">
-            <p>Like what you see? There's plenty more to explore.</p>
-            <a class="btn btn-primary" href="index.html">View all Work
-            </a>
-          </div>
-        </div>
-      </section>
+					<h2>The Results</h2>
+					<p>The new brand was successfully rolled out across all platforms, ready to use and implement in a
+						seamless and smooth way.</p>
+					<ul>
+						<li>Unified two fragmented brand identities into a single cohesive visual system, rolled out
+							across all company touchpoints.</li>
+						<li>Designed and launched a new website replacing two separate platforms, serving a company with
+							50M+ monthly users and 200+ media partners.</li>
+						<li>Built a complete design system and brand guidelines adopted across the full team, from
+							product and marketing to external communications.</li>
+						<li>Updated the affiliate platform UI to align with the new brand, improving consistency across
+							the product ecosystem.</li>
+						<li>Created a full suite of cross-platform assets including social templates, email signatures,
+							internal decks and presentation templates.</li>
+					</ul>
 
-      <section class="section-human" id="about">
-        <div class="container-xxl">
-          <div class="row align-items-center g-4 g-lg-5">
-            <div class="col-12 col-lg-5 text-center text-lg-start">
-              <div class="human-portrait-wrap mx-auto mx-lg-0">
-                <img src="../assets/images/marta.png" alt="Portrait of Marta" class="human-portrait" />
-              </div>
-            </div>
-            <div class="col-12 col-lg-7">
-              <h2 class="section-title section-title--left">The <em>human</em> behind</h2>
-              <p class="lead-para">Hola! I'm Marta, a Product Designer with a strong visual and brand-driven approach, combining UX/UI, design systems and creative direction.</p>
-              <p>With experience across product teams, startups and agencies, I design scalable digital experiences while shaping brand identity and visual languages across platforms.</p>
-              <p>I enjoy working at the intersection of product design, brand and visual storytelling, translating research and product strategy into intuitive interfaces, cohesive design systems and distinctive digital products.</p>
-              <p>When I'm not pushing pixels, you'll find me drawing, dancing, travelling, or getting lost in nature. Driven by psychology, obsessed with good food, and always experimenting with new crafts. Life continuously gives me experiences and ideas that shape how I design.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+				</article>
+			</div>
+		</section>
 
-      <section class="section-testimonials">
-        <div class="container-xxl">
-          <h2 class="section-title section-title--left">In their own <em>words</em></h2>
-          <div class="swiper testimonial-swiper">
-            <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <article class="testimonial-card">
-                <img src="../assets/images/quote.svg" alt="" class="quote-mark" />
-                <p>Marta has been instrumental in defining our branding and design direction at ClickOutMedia. She proved to be a highly skilled product designer and an outstanding collaborator, consistently adding value to every project.</p>
-                <p>Marta adapted easily to new challenges, always bringing thoughtful, user-focused solutions. Her versatility and positive attitude made her a pleasure to work with, and her impact on our design culture will be felt long after her time with the team.</p>
-                <hr class="testimonial-rule" />
-                <footer class="testimonial-author">
-                  <span class="testimonial-avatar testimonial-avatar--blue" aria-hidden="true">TJ</span>
-                  <span class="testimonial-meta"><strong>Thinesh Jegan</strong><span>Head of Design</span></span>
-                </footer>
-              </article>
-            </div>
-            <div class="swiper-slide">
-              <article class="testimonial-card">
-                <img src="../assets/images/quote.svg" alt="" class="quote-mark" />
-                <p>I hired Marta while working at Pickatale, an ed tech start up. From the moment she joined she was such a joy to work with, always calm, professional and providing great feedback and a great team player.</p>
-                <p>At Pickatale we had some very intense projects and deadlines to meet, and I can definitely say we wouldn't have accomplished meeting and exceeding those expectations without her help.</p>
-                <hr class="testimonial-rule" />
-                <footer class="testimonial-author">
-                  <span class="testimonial-avatar testimonial-avatar--pink" aria-hidden="true">VP</span>
-                  <span class="testimonial-meta"><strong>Valerie Paur</strong><span>Lead Product Designer</span></span>
-                </footer>
-              </article>
-            </div>
-            <div class="swiper-slide">
-              <article class="testimonial-card">
-                <img src="../assets/images/quote.svg" alt="" class="quote-mark" />
-                <p>Working with Marta has been a great experience. She is highly organised and genuinely creative, with a strong ability to craft cohesive, thoughtful, and high-quality interfaces and branding.</p>
-                <p>Her Figma files reflect real product maturity; she knows how to optimise files and build systems that are clean, scalable, and collaborative.</p>
-                <p>Beyond her technical strengths, Marta brings radiant, positive energy to the team. She combines structure, creativity, and team spirit in a rare and valuable way.</p>
-                <hr class="testimonial-rule" />
-                <footer class="testimonial-author">
-                  <span class="testimonial-avatar testimonial-avatar--dark" aria-hidden="true">FG</span>
-                  <span class="testimonial-meta"><strong>Florian Gouloubi</strong><span>Senior Product Designer</span></span>
-                </footer>
-              </article>
-            </div>
-          </div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-      </section>
+		<section class="section-case-cta">
+			<div class="container-xxl">
+				<div class="case-cta-inner">
+					<p>Like what you see? There's plenty more to explore.</p>
+					<a class="btn btn-primary" href="index.html">View all Work
+					</a>
+				</div>
+			</div>
+		</section>
 
-      <section class="section-contact" id="contact">
-        <div class="container-xxl">
-          <div class="contact-card text-center">
-            <h2 class="contact-title">Say <em>Hola!</em></h2>
-            <p class="contact-lead">Drop me a line at <a href="mailto:cleonmarta@gmail.com">cleonmarta@gmail.com</a></p>
-            <div class="contact-links">
-              <p>Have a look at <a href="#">My CV</a></p>
-              <p>Beyond the grid: <a href="#">My Illustrations</a></p>
-            </div>
-            <ul class="contact-socials list-unstyled d-flex justify-content-center gap-3 mb-0">
-              <li><a href="#" aria-label="Dribbble" class="social-link"><img src="../assets/images/dribbble.svg" alt="" class="icon-24 theme-icon" /></a></li>
-              <li><a href="#" aria-label="LinkedIn" class="social-link"><img src="../assets/images/linkedin.svg" alt="" class="icon-24 theme-icon" /></a></li>
-            </ul>
-          </div>
-        </div>
-      </section>
-    </main>
+		<section class="section-human" id="about">
+			<div class="container-xxl">
+				<div class="row align-items-center g-4 g-lg-5">
+					<div class="col-12 col-lg-5 text-center text-lg-start">
+						<div class="human-portrait-wrap mx-auto mx-lg-0">
+							<img src="../assets/images/profile-hero.png" alt="Portrait of Marta"
+								class="human-portrait" />
+						</div>
+					</div>
+					<div class="col-12 col-lg-7">
+						<h2 class="section-title section-title--left">The <em>human</em> behind</h2>
+						<p class="lead-para">Hola! I'm Marta, a Product Designer with a strong visual and brand-driven
+							approach, combining UX/UI, design systems and creative direction.</p>
+						<p>With experience across product teams, startups and agencies, I design scalable digital
+							experiences while shaping brand identity and visual languages across platforms.</p>
+						<p>I enjoy working at the intersection of product design, brand and visual storytelling,
+							translating research and product strategy into intuitive interfaces, cohesive design systems
+							and distinctive digital products.</p>
+						<p>When I'm not pushing pixels, you'll find me drawing, dancing, travelling, or getting lost in
+							nature. Driven by psychology, obsessed with good food, and always experimenting with new
+							crafts. Life continuously gives me experiences and ideas that shape how I design.</p>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <footer class="site-footer">
-      <div class="container-xxl">
-        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
-          <p class="mb-0 footer-copy">© 2026 Marta Colmenero. Designed &amp; built with care.</p>
-          <a href="#top" class="footer-back-top">
-            Back to top
-            <img src="../assets/images/arrow-up.svg" alt="" class="btn-icon-end" />
-          </a>
-        </div>
-      </div>
-    </footer>
+		<section class="section-testimonials">
+			<div class="container-xxl">
+				<h2 class="section-title section-title--left">In their own <em>words</em></h2>
+				<div class="swiper testimonial-swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<article class="testimonial-card">
+								<img src="../assets/images/quote.svg" alt="" class="quote-mark" />
+								<p>Marta has been instrumental in defining our branding and design direction at
+									ClickOutMedia. She proved to be a highly skilled product designer and an outstanding
+									collaborator, consistently adding value to every project.</p>
+								<p>Marta adapted easily to new challenges, always bringing thoughtful, user-focused
+									solutions. Her versatility and positive attitude made her a pleasure to work with,
+									and her impact on our design culture will be felt long after her time with the team.
+								</p>
+								<hr class="testimonial-rule" />
+								<footer class="testimonial-author">
+									<span class="testimonial-avatar testimonial-avatar--blue"
+										aria-hidden="true">TJ</span>
+									<span class="testimonial-meta"><strong>Thinesh Jegan</strong><span>Head of
+											Design</span></span>
+								</footer>
+							</article>
+						</div>
+						<div class="swiper-slide">
+							<article class="testimonial-card">
+								<img src="../assets/images/quote.svg" alt="" class="quote-mark" />
+								<p>I hired Marta while working at Pickatale, an ed tech start up. From the moment she
+									joined she was such a joy to work with, always calm, professional and providing
+									great feedback and a great team player.</p>
+								<p>At Pickatale we had some very intense projects and deadlines to meet, and I can
+									definitely say we wouldn't have accomplished meeting and exceeding those
+									expectations without her help.</p>
+								<hr class="testimonial-rule" />
+								<footer class="testimonial-author">
+									<span class="testimonial-avatar testimonial-avatar--pink"
+										aria-hidden="true">VP</span>
+									<span class="testimonial-meta"><strong>Valerie Paur</strong><span>Lead Product
+											Designer</span></span>
+								</footer>
+							</article>
+						</div>
+						<div class="swiper-slide">
+							<article class="testimonial-card">
+								<img src="../assets/images/quote.svg" alt="" class="quote-mark" />
+								<p>Working with Marta has been a great experience. She is highly organised and genuinely
+									creative, with a strong ability to craft cohesive, thoughtful, and high-quality
+									interfaces and branding.</p>
+								<p>Her Figma files reflect real product maturity; she knows how to optimise files and
+									build systems that are clean, scalable, and collaborative.</p>
+								<p>Beyond her technical strengths, Marta brings radiant, positive energy to the team.
+									She combines structure, creativity, and team spirit in a rare and valuable way.</p>
+								<hr class="testimonial-rule" />
+								<footer class="testimonial-author">
+									<span class="testimonial-avatar testimonial-avatar--dark"
+										aria-hidden="true">FG</span>
+									<span class="testimonial-meta"><strong>Florian Gouloubi</strong><span>Senior Product
+											Designer</span></span>
+								</footer>
+							</article>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+		</section>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Swiper (testimonials carousel) -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="../assets/js/script.js"></script>
-  </body>
+		<section class="section-contact" id="contact">
+			<div class="container-xxl">
+				<div class="contact-card text-center">
+					<h2 class="contact-title">Say <em>Hola!</em></h2>
+					<p class="contact-lead">Drop me a line at <a
+							href="mailto:cleonmarta@gmail.com">cleonmarta@gmail.com</a></p>
+					<div class="contact-links">
+						<p>Have a look at <a href="../assets/cv/cv-martacolmenero.pdf" target="_blank" rel="noopener">My CV</a></p>
+						<p>Beyond the grid: <a
+								href="https://www.figma.com/proto/p9IkdJbk0Y6E682aIFLbEp/Illustration-Portfolio?node-id=1-2&viewport=343%2C269%2C0.06&t=JyxNliUjF7P3OHrX-1&scaling=contain&content-scaling=fixed&page-id=0%3A1" target="_blank">My
+								Illustrations</a></p>
+					</div>
+					<ul class="contact-socials list-unstyled d-flex justify-content-center gap-3 mb-0">
+						<li><a href="#" aria-label="Dribbble" class="social-link"><img
+									src="../assets/images/dribbble.svg" alt="" class="icon-24 theme-icon" /></a></li>
+						<li><a href="#" aria-label="LinkedIn" class="social-link"><img
+									src="../assets/images/linkedin.svg" alt="" class="icon-24 theme-icon" /></a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container-xxl">
+			<div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+				<p class="mb-0 footer-copy">© 2026 Marta Colmenero. Designed &amp; built with care.</p>
+				<a href="#top" class="footer-back-top">
+					Back to top
+					<img src="../assets/images/arrow-up.svg" alt="" class="btn-icon-end" />
+				</a>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
+	<!-- Swiper (testimonials carousel) -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="../assets/js/script.js"></script>
+</body>
+
 </html>

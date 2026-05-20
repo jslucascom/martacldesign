@@ -537,6 +537,16 @@ section {
   margin-bottom: 1rem;
   display: block;
 }
+/* Theme-aware skill icons: show the light set in light mode, the dark set in dark mode */
+.skill-icon--dark {
+  display: none;
+}
+[data-bs-theme='dark'] .skill-icon--light {
+  display: none;
+}
+[data-bs-theme='dark'] .skill-icon--dark {
+  display: block;
+}
 
 .skill-title {
   font-family: var(--mc-font-sans);

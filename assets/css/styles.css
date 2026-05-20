@@ -195,7 +195,7 @@ p {
   position: relative;
   cursor: pointer;
   padding: 0;
-  display: inline-block;
+  display: block; /* avoids inline-box descender gap so the li matches the 40px button height */
   transition: background 0.25s ease;
 }
 .theme-toggle .toggle-img {

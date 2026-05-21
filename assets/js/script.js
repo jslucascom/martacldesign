@@ -74,3 +74,13 @@
     }
   });
 })();
+
+
+/* Lightweight email obfuscation: assemble mailto from data attributes on load */
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.email-link').forEach(function (el) {
+    var addr = el.getAttribute('data-user') + '@' + el.getAttribute('data-domain');
+    el.setAttribute('href', 'mailto:' + addr);
+    el.textContent = addr;
+  });
+});

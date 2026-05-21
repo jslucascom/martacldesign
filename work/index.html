@@ -1,218 +1,66 @@
-<!doctype html>
-<html lang="en" data-bs-theme="light">
+---
+layout: default
+title: "Selected Work — Marta Colmenero"
+description: "Selected work from Marta Colmenero — UX/UI, design systems, brand and product design."
+nav: work
+swiper: false
+---
+<section class="section-work section-work-landing">
+	<div class="container-xxl">
+		<h1 class="section-title">Selected <em>Work</em></h1>
 
-<head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>Selected Work — Marta Colmenero</title>
-	<meta name="description"
-		content="Selected work from Marta Colmenero — UX/UI, design systems, brand and product design." />
-    <!-- Open Graph / social sharing -->
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Marta Colmenero" />
-    <meta property="og:title" content="Selected Work — Marta Colmenero" />
-    <meta property="og:description" content="Selected work from Marta Colmenero — UX/UI, design systems, brand and product design." />
-    <meta property="og:url" content="https://martacldesign.com/work/index.html" />
-    <meta property="og:image" content="https://martacldesign.com/assets/images/social-card.png" />
-    <meta property="og:image:width" content="2400" />
-    <meta property="og:image:height" content="1260" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Selected Work — Marta Colmenero" />
-    <meta name="twitter:description" content="Selected work from Marta Colmenero — UX/UI, design systems, brand and product design." />
-    <meta name="twitter:image" content="https://martacldesign.com/assets/images/social-card.png" />
-    <link rel="canonical" href="https://martacldesign.com/work/index.html" />
-
-	<script>
-		(function () {
-			try {
-				var stored = localStorage.getItem('marta-theme');
-				if (stored === 'dark' || stored === 'light') {
-					document.documentElement.setAttribute('data-bs-theme', stored);
-				}
-			} catch (_) { }
-		})();
-	</script>
-
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link
-		href="https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Inter:wght@400;500;600;700&display=swap"
-		rel="stylesheet" />
-	<link rel="icon" type="image/svg+xml" href="../assets/images/logo.svg" />
-	<link rel="stylesheet" href="../assets/css/styles.css" />
-</head>
-
-<body>
-	<header class="site-nav fixed-top">
-		<div class="container-xxl">
-			<nav class="navbar navbar-expand-lg py-3" aria-label="Primary">
-				<a class="navbar-brand d-flex align-items-center" href="../" aria-label="Marta Colmenero — home">
-					<img src="../assets/images/logo.svg" alt="Marta Colmenero" class="brand-logo" />
+		<div class="row g-4 work-grid">
+			<div class="col-12 col-lg-6">
+				<a class="work-card" href="/work/clickout-media.html">
+					<div class="work-card__media">
+						<img src="/assets/images/thumbnail-clickout-media.png"
+							alt="ClickOut Media — brand and product UI" class="work-card__img" loading="lazy" />
+					</div>
+					<div class="work-card__body">
+						<h2 class="work-card__title">Visual Identity, Design System, Website</h2>
+						<p class="work-card__meta">Brand Strategy / Website / Design System</p>
+					</div>
 				</a>
-				<div class="d-flex align-items-center ms-auto d-lg-none">
-					<button type="button" class="theme-toggle nav-toggle-mobile" aria-label="Toggle dark mode"
-						aria-pressed="false">
-						<img src="../assets/images/toggle-light.svg" alt="" class="toggle-img toggle-img--light" />
-						<img src="../assets/images/toggle-dark.svg" alt="" class="toggle-img toggle-img--dark" />
-					</button>
-					<button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="offcanvas"
-						data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="Open menu">
-						<img src="../assets/images/menu.svg" alt="" class="icon-24 theme-icon" />
-					</button>
-				</div>
-				<div class="collapse navbar-collapse" id="primaryNav">
-					<ul class="navbar-nav ms-auto align-items-lg-center gap-lg-4">
-						<li class="nav-item"><a class="nav-link" href="index.html" aria-current="page">Work</a></li>
-						<li class="nav-item"><a class="nav-link" href="../about.html">About</a></li>
-						<li class="nav-item"><a class="nav-link" href="../#contact">Contact</a></li>
-						<li class="nav-item ms-lg-2">
-							<button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"
-								aria-pressed="false">
-								<img src="../assets/images/toggle-light.svg" alt=""
-									class="toggle-img toggle-img--light" />
-								<img src="../assets/images/toggle-dark.svg" alt=""
-									class="toggle-img toggle-img--dark" />
-							</button>
-						</li>
-						<li class="nav-item ms-lg-2">
-							<a class="btn btn-primary btn-cv" href="../assets/cv/cv-martacolmenero.pdf" target="_blank" rel="noopener">Download my CV</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-		</div>
-	</header>
-
-	<div class="offcanvas offcanvas-end mobile-menu" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
-		<div class="offcanvas-header">
-			<a class="mobile-menu-brand" href="../index.html" id="mobileMenuLabel" data-bs-dismiss="offcanvas"
-				aria-label="Marta Colmenero — home">
-				<img src="../assets/images/logo.svg" alt="Marta Colmenero" class="brand-logo" />
-			</a>
-			<div class="offcanvas-header-actions">
-				<button type="button" class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false">
-					<img src="../assets/images/toggle-light.svg" alt="" class="toggle-img toggle-img--light" />
-					<img src="../assets/images/toggle-dark.svg" alt="" class="toggle-img toggle-img--dark" />
-				</button>
-				<button type="button" class="btn-close-custom" data-bs-dismiss="offcanvas" aria-label="Close">
-					<img src="../assets/images/close.svg" alt="" class="icon-24 theme-icon" />
-				</button>
 			</div>
-		</div>
-		<div class="offcanvas-body d-flex flex-column">
-			<ul class="nav flex-column mobile-nav">
-				<li><a class="nav-link" href="../index.html" data-bs-dismiss="offcanvas">Homepage</a></li>
-				<li><a class="nav-link" href="index.html" data-bs-dismiss="offcanvas">Work</a></li>
-				<li><a class="nav-link" href="../about.html" data-bs-dismiss="offcanvas">About</a></li>
-				<li><a class="nav-link" href="../#contact" data-bs-dismiss="offcanvas">Contact</a></li>
-			</ul>
-			<div class="mt-auto pt-4 d-flex flex-column gap-3">
-				<a class="btn btn-primary btn-cv" href="../assets/cv/cv-martacolmenero.pdf" target="_blank" rel="noopener">Download my CV</a>
+			<div class="col-12 col-lg-6">
+				<a class="work-card" href="/work/best-wallet.html">
+					<div class="work-card__media">
+						<img src="/assets/images/thumbnail-best-wallet.png"
+							alt="Best Wallet — crypto converter" class="work-card__img" loading="lazy" />
+					</div>
+					<div class="work-card__body">
+						<h2 class="work-card__title">Crypto Converter Calculator</h2>
+						<p class="work-card__meta">UX/UI / SEO-driven Design</p>
+					</div>
+				</a>
+			</div>
+			<div class="col-12 col-lg-6">
+				<a class="work-card" href="/work/99bitcoins.html">
+					<div class="work-card__media">
+						<img src="/assets/images/thumbnail-99bitcoins.png"
+							alt="99Bitcoins — crypto price chart" class="work-card__img" loading="lazy" />
+					</div>
+					<div class="work-card__body">
+						<h2 class="work-card__title">Crypto Price Chart UX/UI Redesign</h2>
+						<p class="work-card__meta">UX Audit / UI Design</p>
+					</div>
+				</a>
+			</div>
+			<div class="col-12 col-lg-6">
+				<a class="work-card" href="/work/pickatale.html">
+					<div class="work-card__media">
+						<img src="/assets/images/thumbnail-pickatale.png"
+							alt="Pickatale — design system & app refresh" class="work-card__img"
+							loading="lazy" />
+					</div>
+					<div class="work-card__body">
+						<h2 class="work-card__title">Brand, Design System, Website &amp; App Update</h2>
+						<p class="work-card__meta">Brand / Website / App</p>
+					</div>
+				</a>
 			</div>
 		</div>
 	</div>
+</section>
 
-	<main id="top">
-		<section class="section-work section-work-landing">
-			<div class="container-xxl">
-				<h1 class="section-title">Selected <em>Work</em></h1>
-
-				<div class="row g-4 work-grid">
-					<div class="col-12 col-lg-6">
-						<a class="work-card" href="clickout-media.html">
-							<div class="work-card__media">
-								<img src="../assets/images/thumbnail-clickout-media.png"
-									alt="ClickOut Media — brand and product UI" class="work-card__img" loading="lazy" />
-							</div>
-							<div class="work-card__body">
-								<h2 class="work-card__title">Visual Identity, Design System, Website</h2>
-								<p class="work-card__meta">Brand Strategy / Website / Design System</p>
-							</div>
-						</a>
-					</div>
-					<div class="col-12 col-lg-6">
-						<a class="work-card" href="best-wallet.html">
-							<div class="work-card__media">
-								<img src="../assets/images/thumbnail-best-wallet.png"
-									alt="Best Wallet — crypto converter" class="work-card__img" loading="lazy" />
-							</div>
-							<div class="work-card__body">
-								<h2 class="work-card__title">Crypto Converter Calculator</h2>
-								<p class="work-card__meta">UX/UI / SEO-driven Design</p>
-							</div>
-						</a>
-					</div>
-					<div class="col-12 col-lg-6">
-						<a class="work-card" href="99bitcoins.html">
-							<div class="work-card__media">
-								<img src="../assets/images/thumbnail-99bitcoins.png"
-									alt="99Bitcoins — crypto price chart" class="work-card__img" loading="lazy" />
-							</div>
-							<div class="work-card__body">
-								<h2 class="work-card__title">Crypto Price Chart UX/UI Redesign</h2>
-								<p class="work-card__meta">UX Audit / UI Design</p>
-							</div>
-						</a>
-					</div>
-					<div class="col-12 col-lg-6">
-						<a class="work-card" href="pickatale.html">
-							<div class="work-card__media">
-								<img src="../assets/images/thumbnail-pickatale.png"
-									alt="Pickatale — design system & app refresh" class="work-card__img"
-									loading="lazy" />
-							</div>
-							<div class="work-card__body">
-								<h2 class="work-card__title">Brand, Design System, Website &amp; App Update</h2>
-								<p class="work-card__meta">Brand / Website / App</p>
-							</div>
-						</a>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="section-contact" id="contact">
-			<div class="container-xxl">
-				<div class="contact-card text-center">
-					<h2 class="contact-title">Say <em>Hola!</em></h2>
-					<p class="contact-lead">
-						Drop me a line at <a class="email-link" href="#" data-user="cleonmarta" data-domain="gmail.com">email me</a>
-					</p>
-					<div class="contact-links">
-						<p>Have a look at <a href="../assets/cv/cv-martacolmenero.pdf" target="_blank" rel="noopener">My CV</a></p>
-						<p>Beyond the grid: <a
-								href="https://www.figma.com/proto/p9IkdJbk0Y6E682aIFLbEp/Illustration-Portfolio?node-id=1-2&viewport=343%2C269%2C0.06&t=JyxNliUjF7P3OHrX-1&scaling=contain&content-scaling=fixed&page-id=0%3A1" target="_blank">My
-								Illustrations</a></p>
-					</div>
-					<ul class="contact-socials list-unstyled d-flex justify-content-center gap-3 mb-0">
-						<li><a href="#" aria-label="Dribbble" class="social-link"><img
-									src="../assets/images/dribbble.svg" alt="" class="icon-24 theme-icon" /></a></li>
-						<li><a href="#" aria-label="LinkedIn" class="social-link"><img
-									src="../assets/images/linkedin.svg" alt="" class="icon-24 theme-icon" /></a></li>
-					</ul>
-				</div>
-			</div>
-		</section>
-	</main>
-
-	<footer class="site-footer">
-		<div class="container-xxl">
-			<div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
-				<p class="mb-0 footer-copy">© 2026 Marta Colmenero. Designed &amp; built with care.</p>
-				<a href="#top" class="footer-back-top">
-					Back to top
-					<img src="../assets/images/arrow-up.svg" alt="" class="btn-icon-end" />
-				</a>
-			</div>
-		</div>
-	</footer>
-
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-		crossorigin="anonymous"></script>
-	<script src="../assets/js/script.js"></script>
-</body>
-
-</html>
+{% include contact.html %}

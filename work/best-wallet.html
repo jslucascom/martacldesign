@@ -1,398 +1,155 @@
-<!doctype html>
-<html lang="en" data-bs-theme="light">
-
-<head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>Crypto Converter Calculator — Marta Colmenero</title>
-	<meta name="description"
-		content="A real-time crypto converter calculator for Best Wallet, designed to serve users, capture SEO traffic, and support account conversions." />
-    <!-- Open Graph / social sharing -->
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Marta Colmenero" />
-    <meta property="og:title" content="Crypto Converter Calculator — Marta Colmenero" />
-    <meta property="og:description" content="A real-time crypto converter calculator for Best Wallet, designed to serve users, capture SEO traffic, and support account conversions." />
-    <meta property="og:url" content="https://martacldesign.com/work/best-wallet.html" />
-    <meta property="og:image" content="https://martacldesign.com/assets/images/social-card.png" />
-    <meta property="og:image:width" content="2400" />
-    <meta property="og:image:height" content="1260" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Crypto Converter Calculator — Marta Colmenero" />
-    <meta name="twitter:description" content="A real-time crypto converter calculator for Best Wallet, designed to serve users, capture SEO traffic, and support account conversions." />
-    <meta name="twitter:image" content="https://martacldesign.com/assets/images/social-card.png" />
-    <link rel="canonical" href="https://martacldesign.com/work/best-wallet.html" />
-
-	<script>
-		(function () {
-			try {
-				var stored = localStorage.getItem('marta-theme');
-				if (stored === 'dark' || stored === 'light') {
-					document.documentElement.setAttribute('data-bs-theme', stored);
-				}
-			} catch (_) { }
-		})();
-	</script>
-
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link
-		href="https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Inter:wght@400;500;600;700&display=swap"
-		rel="stylesheet" />
-	<link rel="icon" type="image/svg+xml" href="../assets/images/logo.svg" />
-	<!-- Swiper (testimonials carousel) -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-	<link rel="stylesheet" href="../assets/css/styles.css" />
-</head>
-
-<body>
-	<header class="site-nav fixed-top">
-		<div class="container-xxl">
-			<nav class="navbar navbar-expand-lg py-3" aria-label="Primary">
-				<a class="navbar-brand d-flex align-items-center" href="index.html" aria-label="Marta Colmenero — home">
-					<img src="../assets/images/logo.svg" alt="Marta Colmenero" class="brand-logo" />
-				</a>
-				<div class="d-flex align-items-center ms-auto d-lg-none">
-					<button type="button" class="theme-toggle nav-toggle-mobile" aria-label="Toggle dark mode"
-						aria-pressed="false">
-						<img src="../assets/images/toggle-light.svg" alt="" class="toggle-img toggle-img--light" />
-						<img src="../assets/images/toggle-dark.svg" alt="" class="toggle-img toggle-img--dark" />
-					</button>
-					<button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="offcanvas"
-						data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="Open menu">
-						<img src="../assets/images/menu.svg" alt="" class="icon-24 theme-icon" />
-					</button>
-				</div>
-				<div class="collapse navbar-collapse" id="primaryNav">
-					<ul class="navbar-nav ms-auto align-items-lg-center gap-lg-4">
-						<li class="nav-item"><a class="nav-link" href="index.html" aria-current="page">Work</a></li>
-						<li class="nav-item"><a class="nav-link" href="../about.html">About</a></li>
-						<li class="nav-item"><a class="nav-link" href="../../#contact">Contact</a></li>
-						<li class="nav-item ms-lg-2">
-							<button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"
-								aria-pressed="false">
-								<img src="../assets/images/toggle-light.svg" alt=""
-									class="toggle-img toggle-img--light" />
-								<img src="../assets/images/toggle-dark.svg" alt=""
-									class="toggle-img toggle-img--dark" />
-							</button>
-						</li>
-						<li class="nav-item ms-lg-2">
-							<a class="btn btn-primary btn-cv" href="../assets/cv/cv-martacolmenero.pdf" target="_blank" rel="noopener">Download my CV</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-		</div>
-	</header>
-
-	<div class="offcanvas offcanvas-end mobile-menu" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
-		<div class="offcanvas-header">
-			<a class="mobile-menu-brand" href="../index.html" id="mobileMenuLabel" data-bs-dismiss="offcanvas"
-				aria-label="Marta Colmenero — home">
-				<img src="../assets/images/logo.svg" alt="Marta Colmenero" class="brand-logo" />
-			</a>
-			<div class="offcanvas-header-actions">
-				<button type="button" class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false">
-					<img src="../assets/images/toggle-light.svg" alt="" class="toggle-img toggle-img--light" />
-					<img src="../assets/images/toggle-dark.svg" alt="" class="toggle-img toggle-img--dark" />
-				</button>
-				<button type="button" class="btn-close-custom" data-bs-dismiss="offcanvas" aria-label="Close">
-					<img src="../assets/images/close.svg" alt="" class="icon-24 theme-icon" />
-				</button>
+---
+layout: default
+title: "Crypto Converter Calculator — Marta Colmenero"
+description: "A real-time crypto converter calculator for Best Wallet, designed to serve users, capture SEO traffic, and support account conversions."
+nav: work
+swiper: true
+---
+<section class="section-case-header">
+	<div class="container-xxl">
+		<span class="case-eyebrow">UX/UI, SEO-driven Design | Best Wallet</span>
+		<h1 class="case-title">Crypto Converter <em>Calculator</em></h1>
+		<p class="case-intro">A feature design project for Best Wallet, a crypto wallet within the company
+			ecosystem. The goal was to design a real-time crypto converter calculator that could serve users,
+			capture organic search traffic, and support account conversions — all within a single, cohesive
+			page.</p>
+		<dl class="case-meta">
+			<div>
+				<dt>Role</dt>
+				<dd>Product Designer</dd>
 			</div>
-		</div>
-		<div class="offcanvas-body d-flex flex-column">
-			<ul class="nav flex-column mobile-nav">
-				<li><a class="nav-link" href="../index.html" data-bs-dismiss="offcanvas">Homepage</a></li>
-				<li><a class="nav-link" href="index.html" data-bs-dismiss="offcanvas">Work</a></li>
-				<li><a class="nav-link" href="../about.html" data-bs-dismiss="offcanvas">About</a></li>
-				<li><a class="nav-link" href="../../#contact" data-bs-dismiss="offcanvas">Contact</a></li>
+			<div>
+				<dt>Scope</dt>
+				<dd>UX/UI, SEO-driven Design</dd>
+			</div>
+			<div>
+				<dt>Tools</dt>
+				<dd>Figma</dd>
+			</div>
+		</dl>
+	</div>
+</section>
+
+<section class="section-case-feature">
+	<div class="container-xxl">
+		<img src="/assets/images/projects-img/calculator%20components%201.png"
+			alt="Crypto Converter Calculator — featured visual" class="case-featured-img" />
+	</div>
+</section>
+
+<section class="section-case-body">
+	<div class="container-xxl">
+		<article class="case-body">
+
+			<h2>Context</h2>
+			<p>Best Wallet is a crypto wallet product within the ClickOut Media ecosystem, competing in a space
+				where trust, speed, and clarity are everything. Users arriving from search are high-intent but
+				sceptical — they need to find what they're looking for instantly and feel confident in the
+				product before taking any action.</p>
+			<p>As part of an initiative to improve the site's organic authority and usefulness, I identified an
+				opportunity to design a native crypto-to-fiat converter — a high-volume search feature that most
+				competitors handled poorly.</p>
+
+			<h2>My Role</h2>
+			<p>I owned this project end to end. I conducted competitor research, defined the feature scope and
+				UX logic, designed all components and interactions, and delivered the full page template ready
+				for engineering handoff. I worked autonomously throughout.</p>
+
+			<h2>The Opportunity</h2>
+			<p>Crypto converter queries are among the most searched terms in the crypto space. After reviewing
+				how competitors handled this — from cluttered interfaces to basic input fields with no
+				supporting content — it was clear there was room to do it better.</p>
+			<p>The opportunity wasn't just to build a calculator. It was to build a page that served multiple
+				goals at once: provide genuine utility, capture SEO traffic through popular conversion pairs,
+				and guide users toward creating an account. All without feeling like a conversion funnel.</p>
+			<figure><img src="/assets/images/projects-img/Competitor%20samples%201.png"
+					alt="Competitor landscape research" loading="lazy" />
+				<figcaption>Competitor landscape research</figcaption>
+			</figure>
+
+			<h2>The Design Challenges</h2>
+			<p>Three things needed to work together, and that tension is where the interesting design decisions
+				happened.</p>
+			<p><strong>Utility first.</strong> The calculator had to be genuinely useful: real-time rates, clean
+				input logic, instant swap between crypto and fiat, and a wide range of supported currencies. The
+				currency selector modal needed to handle a large list without feeling overwhelming, so fiat
+				currencies were separated from crypto with clear visual hierarchy and search functionality.</p>
+			<p><strong>SEO without feeling like SEO.</strong> The popular markets tables (crypto to fiat and
+				fiat to crypto) needed to be scannable, linkable, and genuinely informative. The design keeps
+				them clean and tabular without feeling like a data dump. Each pair is a potential entry point
+				from search.</p>
+			<p><strong>Conversion without pressure.</strong> The onboarding steps section (Create an Account,
+				Connect Funding Method, Convert Crypto) had to sit naturally within the page flow — not as a
+				hard push, but as a logical next step for someone who just used the calculator and wanted to act
+				on the result.</p>
+			<figure><img src="/assets/images/projects-img/crypto%20converter%201.png"
+					alt="Mobile and modal flows" loading="lazy" />
+				<figcaption>Mobile and modal flows</figcaption>
+			</figure>
+
+			<h2>The Solution</h2>
+			<p>The page was structured as a single focused flow, top to bottom:</p>
+			<ul>
+				<li>The calculator sits above the fold, immediately usable with no friction. One input, one
+					output, a swap button, a live refresh indicator, and a single clear CTA. Nothing
+					unnecessary.</li>
+				<li>Below the fold, the popular markets tables serve double duty — SEO value for high-intent
+					queries and a reference tool for users exploring conversion rates across currencies.</li>
+				<li>The onboarding section follows naturally, contextualised by the calculator above it. By the
+					time a user reaches it, they've already used the product.</li>
+				<li>FAQs and tutorials close the page, addressing trust objections and providing additional
+					SEO-indexed content.</li>
+				<li>On mobile, the layout stacks cleanly with the calculator taking full width, the currency
+					selector as a bottom-sheet modal, and all sections reordered for thumb-friendly scrolling.
+				</li>
 			</ul>
-			<div class="mt-auto pt-4 d-flex flex-column gap-3">
-				<a class="btn btn-primary btn-cv" href="../assets/cv/cv-martacolmenero.pdf" target="_blank" rel="noopener">Download my CV</a>
-			</div>
+			<figure><img src="/assets/images/projects-img/calculator%20desktop%202.png"
+					alt="Full-page flow on desktop" loading="lazy" />
+				<figcaption>Full-page flow on desktop</figcaption>
+			</figure>
+
+			<h2>Component Design</h2>
+			<p>The calculator component was designed as a self-contained, reusable module: input fields,
+				currency dropdowns with icon support, a swap toggle, live rate display, refresh timestamp, and a
+				primary CTA. The currency selector modal supports both search and browsing, with fiat and crypto
+				separated by a clear divider. All states (default, hover, active, loading, empty) were designed
+				and documented for engineering.</p>
+			<figure><img src="/assets/images/projects-img/Screenshot%202026-04-29%20at%2011.22.06%201.png"
+					alt="Component states and documentation" loading="lazy" />
+				<figcaption>Component states and documentation</figcaption>
+			</figure>
+
+			<h2>The Results</h2>
+			<p>Delivered a fully designed, responsive page template covering the calculator feature,
+				SEO-optimised popular markets tables, onboarding flow, FAQ section, and tutorial module — all
+				built on the existing Best Wallet design system.</p>
+			<p>The page was designed to serve three goals simultaneously: drive organic traffic through
+				high-intent crypto conversion queries, provide genuine utility to users already on the site, and
+				support account creation through contextual, non-intrusive conversion touchpoints.</p>
+
+			<h2>What I Would Do Differently</h2>
+			<p>Without access to post-launch data, it's hard to know how the SEO tables performed or whether the
+				onboarding placement drove meaningful conversions. If I were to revisit this, I would push for
+				tracking from day one — even basic metrics like time on page, CTA click rate, and organic entry
+				points — to validate the design decisions and iterate from real data rather than assumptions.
+			</p>
+
+		</article>
+	</div>
+</section>
+
+<section class="section-case-cta">
+	<div class="container-xxl">
+		<div class="case-cta-inner">
+			<p>Like what you see? There's plenty more to explore.</p>
+			<a class="btn btn-primary" href="/work/">View all Work
+			</a>
 		</div>
 	</div>
+</section>
 
-	<main id="top">
-		<section class="section-case-header">
-			<div class="container-xxl">
-				<span class="case-eyebrow">UX/UI, SEO-driven Design | Best Wallet</span>
-				<h1 class="case-title">Crypto Converter <em>Calculator</em></h1>
-				<p class="case-intro">A feature design project for Best Wallet, a crypto wallet within the company
-					ecosystem. The goal was to design a real-time crypto converter calculator that could serve users,
-					capture organic search traffic, and support account conversions — all within a single, cohesive
-					page.</p>
-				<dl class="case-meta">
-					<div>
-						<dt>Role</dt>
-						<dd>Product Designer</dd>
-					</div>
-					<div>
-						<dt>Scope</dt>
-						<dd>UX/UI, SEO-driven Design</dd>
-					</div>
-					<div>
-						<dt>Tools</dt>
-						<dd>Figma</dd>
-					</div>
-				</dl>
-			</div>
-		</section>
+{% include human.html %}
 
-		<section class="section-case-feature">
-			<div class="container-xxl">
-				<img src="../assets/images/projects-img/calculator%20components%201.png"
-					alt="Crypto Converter Calculator — featured visual" class="case-featured-img" />
-			</div>
-		</section>
+{% include testimonials.html %}
 
-		<section class="section-case-body">
-			<div class="container-xxl">
-				<article class="case-body">
-
-					<h2>Context</h2>
-					<p>Best Wallet is a crypto wallet product within the ClickOut Media ecosystem, competing in a space
-						where trust, speed, and clarity are everything. Users arriving from search are high-intent but
-						sceptical — they need to find what they're looking for instantly and feel confident in the
-						product before taking any action.</p>
-					<p>As part of an initiative to improve the site's organic authority and usefulness, I identified an
-						opportunity to design a native crypto-to-fiat converter — a high-volume search feature that most
-						competitors handled poorly.</p>
-
-					<h2>My Role</h2>
-					<p>I owned this project end to end. I conducted competitor research, defined the feature scope and
-						UX logic, designed all components and interactions, and delivered the full page template ready
-						for engineering handoff. I worked autonomously throughout.</p>
-
-					<h2>The Opportunity</h2>
-					<p>Crypto converter queries are among the most searched terms in the crypto space. After reviewing
-						how competitors handled this — from cluttered interfaces to basic input fields with no
-						supporting content — it was clear there was room to do it better.</p>
-					<p>The opportunity wasn't just to build a calculator. It was to build a page that served multiple
-						goals at once: provide genuine utility, capture SEO traffic through popular conversion pairs,
-						and guide users toward creating an account. All without feeling like a conversion funnel.</p>
-					<figure><img src="../assets/images/projects-img/Competitor%20samples%201.png"
-							alt="Competitor landscape research" loading="lazy" />
-						<figcaption>Competitor landscape research</figcaption>
-					</figure>
-
-					<h2>The Design Challenges</h2>
-					<p>Three things needed to work together, and that tension is where the interesting design decisions
-						happened.</p>
-					<p><strong>Utility first.</strong> The calculator had to be genuinely useful: real-time rates, clean
-						input logic, instant swap between crypto and fiat, and a wide range of supported currencies. The
-						currency selector modal needed to handle a large list without feeling overwhelming, so fiat
-						currencies were separated from crypto with clear visual hierarchy and search functionality.</p>
-					<p><strong>SEO without feeling like SEO.</strong> The popular markets tables (crypto to fiat and
-						fiat to crypto) needed to be scannable, linkable, and genuinely informative. The design keeps
-						them clean and tabular without feeling like a data dump. Each pair is a potential entry point
-						from search.</p>
-					<p><strong>Conversion without pressure.</strong> The onboarding steps section (Create an Account,
-						Connect Funding Method, Convert Crypto) had to sit naturally within the page flow — not as a
-						hard push, but as a logical next step for someone who just used the calculator and wanted to act
-						on the result.</p>
-					<figure><img src="../assets/images/projects-img/crypto%20converter%201.png"
-							alt="Mobile and modal flows" loading="lazy" />
-						<figcaption>Mobile and modal flows</figcaption>
-					</figure>
-
-					<h2>The Solution</h2>
-					<p>The page was structured as a single focused flow, top to bottom:</p>
-					<ul>
-						<li>The calculator sits above the fold, immediately usable with no friction. One input, one
-							output, a swap button, a live refresh indicator, and a single clear CTA. Nothing
-							unnecessary.</li>
-						<li>Below the fold, the popular markets tables serve double duty — SEO value for high-intent
-							queries and a reference tool for users exploring conversion rates across currencies.</li>
-						<li>The onboarding section follows naturally, contextualised by the calculator above it. By the
-							time a user reaches it, they've already used the product.</li>
-						<li>FAQs and tutorials close the page, addressing trust objections and providing additional
-							SEO-indexed content.</li>
-						<li>On mobile, the layout stacks cleanly with the calculator taking full width, the currency
-							selector as a bottom-sheet modal, and all sections reordered for thumb-friendly scrolling.
-						</li>
-					</ul>
-					<figure><img src="../assets/images/projects-img/calculator%20desktop%202.png"
-							alt="Full-page flow on desktop" loading="lazy" />
-						<figcaption>Full-page flow on desktop</figcaption>
-					</figure>
-
-					<h2>Component Design</h2>
-					<p>The calculator component was designed as a self-contained, reusable module: input fields,
-						currency dropdowns with icon support, a swap toggle, live rate display, refresh timestamp, and a
-						primary CTA. The currency selector modal supports both search and browsing, with fiat and crypto
-						separated by a clear divider. All states (default, hover, active, loading, empty) were designed
-						and documented for engineering.</p>
-					<figure><img src="../assets/images/projects-img/Screenshot%202026-04-29%20at%2011.22.06%201.png"
-							alt="Component states and documentation" loading="lazy" />
-						<figcaption>Component states and documentation</figcaption>
-					</figure>
-
-					<h2>The Results</h2>
-					<p>Delivered a fully designed, responsive page template covering the calculator feature,
-						SEO-optimised popular markets tables, onboarding flow, FAQ section, and tutorial module — all
-						built on the existing Best Wallet design system.</p>
-					<p>The page was designed to serve three goals simultaneously: drive organic traffic through
-						high-intent crypto conversion queries, provide genuine utility to users already on the site, and
-						support account creation through contextual, non-intrusive conversion touchpoints.</p>
-
-					<h2>What I Would Do Differently</h2>
-					<p>Without access to post-launch data, it's hard to know how the SEO tables performed or whether the
-						onboarding placement drove meaningful conversions. If I were to revisit this, I would push for
-						tracking from day one — even basic metrics like time on page, CTA click rate, and organic entry
-						points — to validate the design decisions and iterate from real data rather than assumptions.
-					</p>
-
-				</article>
-			</div>
-		</section>
-
-		<section class="section-case-cta">
-			<div class="container-xxl">
-				<div class="case-cta-inner">
-					<p>Like what you see? There's plenty more to explore.</p>
-					<a class="btn btn-primary" href="index.html">View all Work
-					</a>
-				</div>
-			</div>
-		</section>
-
-		<section class="section-human" id="about">
-			<div class="container-xxl">
-				<div class="row align-items-center g-4 g-lg-5">
-					<div class="col-12 col-lg-5 text-center text-lg-start">
-						<div class="human-portrait-wrap mx-auto mx-lg-0">
-							<img src="../assets/images/profile-about.png" alt="Portrait of Marta"
-								class="human-portrait" />
-						</div>
-					</div>
-					<div class="col-12 col-lg-7">
-						<h2 class="section-title section-title--left">The <em>human</em> behind</h2>
-						<p class="lead-para">Hola! I'm Marta, a Product Designer with a strong visual and brand-driven
-							approach, combining UX/UI, design systems and creative direction.</p>
-						<p>With experience across product teams, startups and agencies, I design scalable digital
-							experiences while shaping brand identity and visual languages across platforms.</p>
-						<p>I enjoy working at the intersection of product design, brand and visual storytelling,
-							translating research and product strategy into intuitive interfaces, cohesive design systems
-							and distinctive digital products.</p>
-						<p>When I'm not pushing pixels, you'll find me drawing, dancing, travelling, or getting lost in
-							nature. Driven by psychology, obsessed with good food, and always experimenting with new
-							crafts. Life continuously gives me experiences and ideas that shape how I design.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="section-testimonials">
-			<div class="container-xxl">
-				<h2 class="section-title section-title--left">In their own <em>words</em></h2>
-				<div class="swiper testimonial-swiper">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide">
-							<article class="testimonial-card">
-								<img src="../assets/images/quote.svg" alt="" class="quote-mark" />
-								<p>Marta has been instrumental in defining our branding and design direction at
-									ClickOutMedia. She proved to be a highly skilled product designer and an outstanding
-									collaborator, consistently adding value to every project.</p>
-								<p>Marta adapted easily to new challenges, always bringing thoughtful, user-focused
-									solutions. Her versatility and positive attitude made her a pleasure to work with,
-									and her impact on our design culture will be felt long after her time with the team.
-								</p>
-								<hr class="testimonial-rule" />
-								<footer class="testimonial-author">
-									<span class="testimonial-avatar testimonial-avatar--blue"
-										aria-hidden="true">TJ</span>
-									<span class="testimonial-meta"><strong>Thinesh Jegan</strong><span>Head of
-											Design</span></span>
-								</footer>
-							</article>
-						</div>
-						<div class="swiper-slide">
-							<article class="testimonial-card">
-								<img src="../assets/images/quote.svg" alt="" class="quote-mark" />
-								<p>I hired Marta while working at Pickatale, an ed tech start up. From the moment she
-									joined she was such a joy to work with, always calm, professional and providing
-									great feedback and a great team player.</p>
-								<p>At Pickatale we had some very intense projects and deadlines to meet, and I can
-									definitely say we wouldn't have accomplished meeting and exceeding those
-									expectations without her help.</p>
-								<hr class="testimonial-rule" />
-								<footer class="testimonial-author">
-									<span class="testimonial-avatar testimonial-avatar--pink"
-										aria-hidden="true">VP</span>
-									<span class="testimonial-meta"><strong>Valerie Paur</strong><span>Lead Product
-											Designer</span></span>
-								</footer>
-							</article>
-						</div>
-						<div class="swiper-slide">
-							<article class="testimonial-card">
-								<img src="../assets/images/quote.svg" alt="" class="quote-mark" />
-								<p>Working with Marta has been a great experience. She is highly organised and genuinely
-									creative, with a strong ability to craft cohesive, thoughtful, and high-quality
-									interfaces and branding.</p>
-								<p>Her Figma files reflect real product maturity; she knows how to optimise files and
-									build systems that are clean, scalable, and collaborative.</p>
-								<p>Beyond her technical strengths, Marta brings radiant, positive energy to the team.
-									She combines structure, creativity, and team spirit in a rare and valuable way.</p>
-								<hr class="testimonial-rule" />
-								<footer class="testimonial-author">
-									<span class="testimonial-avatar testimonial-avatar--dark"
-										aria-hidden="true">FG</span>
-									<span class="testimonial-meta"><strong>Florian Gouloubi</strong><span>Senior Product
-											Designer</span></span>
-								</footer>
-							</article>
-						</div>
-					</div>
-					<div class="swiper-pagination"></div>
-				</div>
-			</div>
-		</section>
-
-		<section class="section-contact" id="contact">
-			<div class="container-xxl">
-				<div class="contact-card text-center">
-					<h2 class="contact-title">Say <em>Hola!</em></h2>
-					<p class="contact-lead">Drop me a line at <a class="email-link" href="#" data-user="cleonmarta" data-domain="gmail.com">email me</a></p>
-					<div class="contact-links">
-						<p>Have a look at <a href="../assets/cv/cv-martacolmenero.pdf" target="_blank" rel="noopener">My CV</a></p>
-						<p>Beyond the grid: <a
-								href="https://www.figma.com/proto/p9IkdJbk0Y6E682aIFLbEp/Illustration-Portfolio?node-id=1-2&viewport=343%2C269%2C0.06&t=JyxNliUjF7P3OHrX-1&scaling=contain&content-scaling=fixed&page-id=0%3A1" target="_blank">My
-								Illustrations</a></p>
-					</div>
-					<ul class="contact-socials list-unstyled d-flex justify-content-center gap-3 mb-0">
-						<li><a href="#" aria-label="Dribbble" class="social-link"><img
-									src="../assets/images/dribbble.svg" alt="" class="icon-24 theme-icon" /></a></li>
-						<li><a href="#" aria-label="LinkedIn" class="social-link"><img
-									src="../assets/images/linkedin.svg" alt="" class="icon-24 theme-icon" /></a></li>
-					</ul>
-				</div>
-			</div>
-		</section>
-	</main>
-
-	<footer class="site-footer">
-		<div class="container-xxl">
-			<div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
-				<p class="mb-0 footer-copy">© 2026 Marta Colmenero. Designed &amp; built with care.</p>
-				<a href="#top" class="footer-back-top">
-					Back to top
-					<img src="../assets/images/arrow-up.svg" alt="" class="btn-icon-end" />
-				</a>
-			</div>
-		</div>
-	</footer>
-
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-		crossorigin="anonymous"></script>
-	<!-- Swiper (testimonials carousel) -->
-	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-	<script src="../assets/js/script.js"></script>
-</body>
-
-</html>
+{% include contact.html %}

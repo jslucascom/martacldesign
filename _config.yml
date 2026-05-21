@@ -1,0 +1,16 @@
+# Site settings for Marta Colmenero — martacldesign.com
+# This file configures Jekyll, the engine GitHub Pages uses to build the site.
+# It lets shared pieces (header, footer, etc.) live in one place.
+
+title: "Marta Colmenero"
+description: "Product designer specialising in UX/UI, design systems and brand identity."
+
+# Live site root. Used to build canonical and social-share URLs.
+url: "https://martacldesign.com"
+baseurl: ""
+
+# Don't process these with Jekyll / keep them out of the built site.
+exclude:
+  - README.md
+  - .gitignore
+  - vendor

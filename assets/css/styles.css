@@ -677,12 +677,13 @@ section {
 .cta-card {
   border: 1px solid var(--mc-border);
   border-radius: var(--mc-radius-lg);
-  padding: 2rem;
+  padding: 1.5rem;
   background: var(--mc-surface);
   height: 100%;
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1.25rem;
 }
 
 .cta-card-icon {
@@ -691,30 +692,37 @@ section {
   flex-shrink: 0;
 }
 
-/* Show dark-background icons in light mode, light-background icons in dark mode */
+/* Show light icons in light mode, dark icons in dark mode */
 .cta-icon-dark  { display: none; }
 .cta-icon-light { display: block; }
 [data-bs-theme='dark'] .cta-icon-dark  { display: block; }
 [data-bs-theme='dark'] .cta-icon-light { display: none; }
 
+.cta-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
 .cta-card-title {
   font-family: var(--mc-font-sans);
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: 600;
   margin: 0;
   color: var(--mc-text);
 }
 
 .cta-card-desc {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: var(--mc-text-muted);
   margin: 0;
-  flex: 1;
 }
 
 /* ----------  CONTACT  ---------- */
 .section-contact {
-  background: #160d0d; /* neutral/900 — always dark */
+  background: var(--mc-surface);
+  border-radius: var(--mc-radius-xl) var(--mc-radius-xl) 0 0;
   padding-block: clamp(56px, 7vw, 110px);
 }
 
@@ -730,7 +738,7 @@ section {
 }
 
 .contact-lead {
-  color: var(--mc-text);
+  color: var(--mc-text-muted);
   font-size: 1.05rem;
   margin-bottom: 2.25rem;
 }
@@ -747,7 +755,7 @@ section {
   transition: background 0.2s ease;
 }
 .social-link:hover {
-  background: var(--mc-surface);
+  background: var(--mc-surface-2);
 }
 
 /* ----------  FOOTER  ---------- */

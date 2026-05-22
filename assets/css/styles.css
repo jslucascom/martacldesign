@@ -677,7 +677,7 @@ section {
 .cta-card {
   border: 1px solid var(--mc-border);
   border-radius: var(--mc-radius-lg);
-  padding: 1.5rem;
+  padding: 40px;
   background: var(--mc-surface);
   height: 100%;
   display: flex;
@@ -687,8 +687,8 @@ section {
 }
 
 .cta-card-icon {
-  width: 64px;
-  height: 64px;
+  width: 104px;
+  height: 104px;
   flex-shrink: 0;
 }
 
@@ -701,6 +701,7 @@ section {
 .cta-card-body {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 0.5rem;
   flex: 1;
 }
@@ -714,7 +715,7 @@ section {
 }
 
 .cta-card-desc {
-  font-size: 0.9rem;
+  font-size: 18px;
   color: var(--mc-text-muted);
   margin: 0;
 }

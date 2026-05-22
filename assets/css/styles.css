@@ -708,7 +708,7 @@ section {
 
 .cta-card-title {
   font-family: var(--mc-font-sans);
-  font-size: 1.05rem;
+  font-size: 24px;
   font-weight: 600;
   margin: 0;
   color: var(--mc-text);

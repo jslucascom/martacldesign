@@ -965,6 +965,10 @@ section {
   body {
     font-size: 16px;
   }
+  .container-xxl {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
   .work-card__media {
     aspect-ratio: 4 / 3;
   }

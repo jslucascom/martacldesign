@@ -76,6 +76,20 @@
 })();
 
 
+/* Mobile nav: close offcanvas when a link is clicked, then navigate.
+   data-bs-dismiss on <a> tags calls preventDefault() in Bootstrap 5,
+   which blocks navigation — so we handle it manually instead. */
+document.addEventListener('DOMContentLoaded', function () {
+  var offcanvasEl = document.getElementById('mobileMenu');
+  if (!offcanvasEl) return;
+  offcanvasEl.querySelectorAll('.mobile-nav .nav-link').forEach(function (link) {
+    link.addEventListener('click', function () {
+      var bsOffcanvas = window.bootstrap && bootstrap.Offcanvas.getInstance(offcanvasEl);
+      if (bsOffcanvas) bsOffcanvas.hide();
+    });
+  });
+});
+
 /* Lightweight email obfuscation: assemble mailto from data attributes on load */
 document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('.email-link').forEach(function (el) {

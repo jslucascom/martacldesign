@@ -76,16 +76,25 @@
 })();
 
 
-/* Mobile nav: close offcanvas when a link is clicked, then navigate.
-   data-bs-dismiss on <a> tags calls preventDefault() in Bootstrap 5,
-   which blocks navigation — so we handle it manually instead. */
+/* Mobile nav: only the same-page #contact link needs special handling —
+   close the drawer first, then scroll. All other nav links navigate
+   naturally (page change destroys the offcanvas anyway). */
 document.addEventListener('DOMContentLoaded', function () {
   var offcanvasEl = document.getElementById('mobileMenu');
   if (!offcanvasEl) return;
-  offcanvasEl.querySelectorAll('.mobile-nav .nav-link').forEach(function (link) {
-    link.addEventListener('click', function () {
+
+  offcanvasEl.querySelectorAll('.mobile-nav .nav-link[href^="#"]').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      var href = link.getAttribute('href');
       var bsOffcanvas = window.bootstrap && bootstrap.Offcanvas.getInstance(offcanvasEl);
-      if (bsOffcanvas) bsOffcanvas.hide();
+      if (bsOffcanvas) {
+        offcanvasEl.addEventListener('hidden.bs.offcanvas', function () {
+          var target = document.querySelector(href);
+          if (target) target.scrollIntoView({ behavior: 'smooth' });
+        }, { once: true });
+        bsOffcanvas.hide();
+      }
     });
   });
 });

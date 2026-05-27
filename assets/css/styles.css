@@ -984,6 +984,23 @@ section {
   .placeholder-title {
     font-size: 1.1rem;
   }
+
+  /* CTA cards: stack vertically on small screens */
+  .cta-card {
+    flex-direction: column;
+    padding: 1.75rem;
+    gap: 1rem;
+  }
+  .cta-card-icon {
+    width: 64px;
+    height: 64px;
+  }
+  .cta-card-title {
+    font-size: 1.2rem;
+  }
+  .cta-card-desc {
+    font-size: 1rem;
+  }
 }
 
 /* ----------  TESTIMONIALS CAROUSEL (Swiper) — amend 02  ----------
@@ -1056,6 +1073,12 @@ section {
   align-items: center;
   gap: 0.75rem;
   margin-left: auto;
+}
+
+/* Ensure the offcanvas body scrolls and clears the Android/iOS nav bar */
+.mobile-menu .offcanvas-body {
+  overflow-y: auto;
+  padding-bottom: max(1.5rem, env(safe-area-inset-bottom));
 }
 
 /* Nav items separated by dividers */

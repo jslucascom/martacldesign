@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "dev": "bundle exec jekyll serve --livereload --open-url"
+  }
+}

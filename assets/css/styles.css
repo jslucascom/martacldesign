@@ -723,7 +723,7 @@ section {
 /* ----------  CONTACT  ---------- */
 .section-contact {
   background: var(--mc-surface);
-  border-radius: var(--mc-radius-xl);
+  /* border-radius: var(--mc-radius-xl); */
   padding-block: clamp(56px, 7vw, 110px);
   margin-bottom: clamp(24px, 3vw, 40px);
 }
@@ -941,6 +941,7 @@ section {
 }
 .case-cta-inner {
   text-align: center;
+  padding-top: 80px;
 }
 .case-cta-inner p {
   color: var(--mc-text);

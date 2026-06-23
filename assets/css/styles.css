@@ -409,6 +409,12 @@ p {
   position: relative;
 }
 
+.hero--home {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
 .hero-blobs {
   position: absolute;
   inset: 0;

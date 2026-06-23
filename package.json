@@ -1,5 +1,8 @@
 {
   "scripts": {
     "dev": "bundle exec jekyll serve --livereload --open-url"
+  },
+  "dependencies": {
+    "gsap": "^3.15.0"
   }
 }

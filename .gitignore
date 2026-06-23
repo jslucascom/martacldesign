@@ -26,3 +26,7 @@ _site/
 vendor/
 .bundle/
 Gemfile.lock
+
+# Node
+node_modules/
+package-lock.json

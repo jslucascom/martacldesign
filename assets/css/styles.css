@@ -405,12 +405,12 @@ p {
 
 /* ----------  HERO  ---------- */
 .hero {
-  padding: clamp(64px, 9vw, 140px) 0 clamp(48px, 7vw, 100px);
+  padding: clamp(40px, 9vw, 80px) 0 clamp(48px, 7vw, 100px);
   position: relative;
 }
 
 .hero--home {
-  min-height: 90vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
 }
@@ -423,11 +423,11 @@ p {
   object-fit: cover;
   pointer-events: none;
   z-index: 0;
-  opacity: 0;
+  opacity: 1;
   transition: opacity 0.4s ease;
 }
-.hero-blobs--light {
-  opacity: 1;
+.hero-blobs--dark {
+  opacity: 0;
 }
 [data-bs-theme='dark'] .hero-blobs--light {
   opacity: 0;

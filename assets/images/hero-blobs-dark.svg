@@ -91,11 +91,11 @@
     </filter>
 
     <linearGradient id="paint_top_morph" x1="667.898" y1="690" x2="667.898" y2="13.3555" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#6C2720"/>
+      <stop stop-color="#221918"/>
       <stop offset="1" stop-color="#160D0D"/>
     </linearGradient>
     <linearGradient id="paint_bottom_morph" x1="940.974" y1="650.771" x2="940.974" y2="1900" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#221918"/>
+      <stop stop-color="#6C2720"/>
       <stop offset="1" stop-color="#160D0D"/>
     </linearGradient>
 

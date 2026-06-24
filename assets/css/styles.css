@@ -405,7 +405,7 @@ p {
 
 /* ----------  HERO  ---------- */
 .hero {
-  padding: clamp(40px, 9vw, 80px) 0 clamp(48px, 7vw, 100px);
+  padding: clamp(40px, 9vw, 40px) 0 clamp(48px, 7vw, 100px);
   position: relative;
 }
 

@@ -66,28 +66,34 @@
 
     /* -----------------------------------------------------------------------
        1. HERO — plays on page load (no scroll trigger)
+       Wrapped in document.fonts.ready so SplitText measures lines correctly
+       on mobile (fonts may not be loaded when DOMContentLoaded fires).
     ----------------------------------------------------------------------- */
-    var avatar = document.querySelector('.hero-avatar');
-    if (avatar) {
-      gsap.fromTo(avatar,
-        { opacity: 0, scale: 0.9 },
-        { opacity: 1, scale: 1, duration: 0.8, ease: 'power2.out', delay: 0.1 }
-      );
-    }
+    document.fonts.ready.then(function () {
 
-    var eyebrow = document.querySelector('.hero-eyebrow');
-    if (eyebrow) revealLines(eyebrow, { hero: true, delay: 0.3 });
+      var avatar = document.querySelector('.hero-avatar');
+      if (avatar) {
+        gsap.fromTo(avatar,
+          { opacity: 0, scale: 0.9 },
+          { opacity: 1, scale: 1, duration: 0.8, ease: 'power2.out', delay: 0.1 }
+        );
+      }
 
-    var heroTitle = document.querySelector('.hero-title');
-    if (heroTitle) revealLines(heroTitle, { hero: true, delay: 0.44, stagger: 0.11 });
+      var eyebrow = document.querySelector('.hero-eyebrow');
+      if (eyebrow) revealLines(eyebrow, { hero: true, delay: 0.3 });
 
-    var heroActions = document.querySelector('.hero-actions');
-    if (heroActions) {
-      gsap.fromTo(heroActions,
-        { y: 18, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.6, ease: 'power2.out', delay: 0.8 }
-      );
-    }
+      var heroTitle = document.querySelector('.hero-title');
+      if (heroTitle) revealLines(heroTitle, { hero: true, delay: 0.44, stagger: 0.11 });
+
+      var heroActions = document.querySelector('.hero-actions');
+      if (heroActions) {
+        gsap.fromTo(heroActions,
+          { y: 18, opacity: 0 },
+          { y: 0, opacity: 1, duration: 0.6, ease: 'power2.out', delay: 0.8 }
+        );
+      }
+
+    });
 
     /* -----------------------------------------------------------------------
        2. WORK CARD IMAGES — fade-up on scroll

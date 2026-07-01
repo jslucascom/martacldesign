@@ -1100,6 +1100,27 @@ section {
   display: block;
 }
 
+/* ----------  MOBILE: force all GSAP-animated elements visible  ----------
+   Below 1024px animations are disabled in JS, but a cached old script could
+   still set opacity:0 as an inline style. !important overrides inline styles. */
+@media (max-width: 1023px) {
+  .hero-avatar,
+  .hero-eyebrow,
+  .hero-title,
+  .hero-actions,
+  .work-card__media,
+  .work-card__title,
+  .work-card__meta,
+  .section-title,
+  .human-portrait-wrap,
+  .lead-para,
+  .section-testimonials,
+  .section-contact {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
 /* Soft fade at the foot of the hero so the blob edge blends into the page (no hard line) */
 .hero::after {
   content: "";

@@ -9,6 +9,9 @@
   if (typeof gsap === 'undefined') return;
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
+  // Disable all animations on screens narrower than 1024px
+  if (window.innerWidth < 1024) return;
+
   gsap.registerPlugin(ScrollTrigger, SplitText);
 
   /* -------------------------------------------------------------------------
@@ -66,8 +69,6 @@
 
     /* -----------------------------------------------------------------------
        1. HERO — plays on page load (no scroll trigger)
-       Wrapped in document.fonts.ready so SplitText measures lines correctly
-       on mobile (fonts may not be loaded when DOMContentLoaded fires).
     ----------------------------------------------------------------------- */
     document.fonts.ready.then(function () {
 

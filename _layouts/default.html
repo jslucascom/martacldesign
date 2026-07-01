@@ -41,8 +41,9 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16.png" />
 	<link rel="apple-touch-icon" sizes="192x192" href="/assets/images/favicon-192.png" />{% if page.swiper %}<!-- Swiper (testimonials carousel) -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />{% endif %}<link rel="stylesheet" href="/assets/css/styles.css" />{% if page.gsap %}
-	<!-- GSAP: hide animated elements before JS runs (html.js = JS available) -->
+	<!-- GSAP: hide animated elements before JS runs (desktop only — animations disabled on mobile) -->
 	<style>
+	@media (min-width: 1024px) {
 	html.js .hero-avatar,
 	html.js .hero-eyebrow,
 	html.js .hero-title,
@@ -56,6 +57,7 @@
 	html.js .section-human .col-12.col-lg-7 p,
 	html.js .section-testimonials,
 	html.js .section-contact { opacity: 0; }
+	}
 	</style>
 	<!-- GSAP core + ScrollTrigger + SplitText (served locally from node_modules) -->
 	<script src="/assets/js/gsap.min.js"></script>

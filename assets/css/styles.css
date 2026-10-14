@@ -933,7 +933,7 @@ section {
   width: 100%;
   height: auto;
   border-radius: var(--mc-radius-md);
-  background: var(--mc-bg-alt);
+  background: #fbf8f7;
 }
 .case-body figure figcaption {
   font-size: 0.85rem;

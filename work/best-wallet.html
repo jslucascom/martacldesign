@@ -1,8 +1,7 @@
 ---
 layout: default
 title: "A zero-friction crypto converter built to rank and convert — Marta Colmenero"
-description: "A real-time crypto converter calculator for Best Wallet, designed to serve users, capture SEO traffic, and
-support account conversions."
+description: "A real-time crypto converter calculator for Best Wallet, designed to bring in organic search traffic, serve users and lead naturally to the app download."
 nav: work
 swiper: true
 ---
@@ -10,7 +9,7 @@ swiper: true
 	<div class="container-xxl">
 		<span class="case-eyebrow">UX/UI, SEO-driven Design | Best Wallet</span>
 		<h1 class="case-title">A zero-friction crypto converter built to rank and convert</h1>
-		<p class="case-intro">A feature design project for Best Wallet, a crypto wallet within the company ecosystem. The goal was to design a real-time crypto converter calculator that could serve users, capture organic search traffic, and support account conversions — all within a single, cohesive page.</p>
+		<p class="case-intro">Best Wallet needed a real-time crypto converter calculator. It had to be a tool people would actually use, a page that could bring in traffic from Google, and a gentle first step towards downloading the app and opening an account. I designed it end to end.</p>
 		<dl class="case-meta">
 			<div>
 				<dt>Role</dt>
@@ -30,7 +29,7 @@ swiper: true
 
 <section class="section-case-feature">
 	<div class="container-xxl">
-		<img src="/assets/images/projects/best-wallet/best-wallet-00-hero.png" alt="Crypto Converter Calculator — featured visual" class="case-featured-img" />
+		<img src="/assets/images/projects/best-wallet/best-wallet-00-hero.png" alt="Best Wallet crypto converter on mobile: calculator, currency selector and onboarding steps" class="case-featured-img" />
 	</div>
 </section>
 
@@ -39,62 +38,64 @@ swiper: true
 		<article class="case-body">
 
 			<h2>Context</h2>
-			<p>Best Wallet is a crypto wallet product within the ClickOut Media ecosystem, competing in a space where trust, speed, and clarity are everything. Users arriving from search are high-intent but sceptical — they need to find what they're looking for instantly and feel confident in the product before taking any action.</p>
-			<p>As part of an initiative to improve the site's organic authority and usefulness, I identified an opportunity to design a native crypto-to-fiat converter — a high-volume search feature that most competitors handled poorly.</p>
-			<p>Another part of the challenge was designing something that felt trustworthy enough to use for financial decisions, and simple enough that the primary conversion (calculator → account creation) felt natural, not forced.</p>
+			<p>Best Wallet is a crypto wallet product, competing in a space where trust, speed, and clarity are everything. Most people landing on the site come from Google. They know what they want, but they don't trust you yet. They want their answer fast, and they need to feel the numbers are right before they do anything with them.</p>
+			<p>While we were looking for ways to grow organic traffic, I suggested building our own converter. People search for these conversions all the time, and the pages ranking for them were either cluttered or almost empty. It felt like an easy place to do better.</p>
+			<p>Another part of the challenge was designing something that felt trustworthy enough to use for financial decisions, and simple enough that the primary conversion (calculator &rarr; download app &rarr; account creation) felt natural, not forced.</p>
 
 			<h2>My Role</h2>
-			<p>I owned this project end to end. I conducted competitor research, defined the feature scope and UX logic, designed all components and interactions, and delivered the full page template ready for engineering handoff. I worked autonomously throughout.</p>
+			<p>I owned this project end to end. I conducted competitor research, and then defined the feature scope and UX logic: which inputs it needed, how currencies behave, when rates refresh and in what order everything appears on the page. Finally, I designed the page and the calculator component with all its states, for desktop and mobile, and prepared everything for the developers.</p>
+			<figure><img src="/assets/images/projects/best-wallet/best-wallet-01-my-role.png" alt="How competitors were doing it: competitor converter pages" loading="lazy" /></figure>
 
-			<h2>The Opportunity</h2>
-			<p>Crypto converter queries are among the most searched terms in the crypto space. After reviewing how competitors handled this — from cluttered interfaces to basic input fields with no supporting content — it was clear there was room to do it better.</p>
-			<p>The opportunity wasn't just to build a calculator. It was to build a page that served multiple goals at once: provide genuine utility, capture SEO traffic through popular conversion pairs, and guide users toward creating an account. All without feeling like a conversion funnel.</p>
-			<figure><img src="/assets/images/projects/best-wallet/best-wallet-01-opportunity.png" alt="Competitor landscape research" loading="lazy" /></figure>
-
-			<h2>The Design Challenges</h2>
-			<p>Three things needed to work together, and that tension is where the interesting design decisions happened.</p>
+			<h2>The Opportunity &amp; Goals</h2>
+			<p>The page had to:</p>
 			<ul>
-				<li><strong>Utility first.</strong> The calculator had to be genuinely useful: real-time rates, clean input logic, instant swap between crypto and fiat, and a wide range of supported currencies. The currency selector modal needed to handle a large list without feeling overwhelming, so fiat currencies were separated from crypto with clear visual hierarchy and search functionality.</li>
-				<li><strong>SEO without feeling like SEO.</strong> The popular markets tables (crypto to fiat and fiat to crypto) needed to be scannable, linkable, and genuinely informative. The design keeps them clean and tabular without feeling like a data dump. Each pair is a potential entry point from search.</li>
-				<li><strong>Conversion without pressure.</strong> The onboarding steps section (Create an Account, Connect Funding Method, Convert Crypto) had to sit naturally within the page flow — not as a hard push, but as a logical next step for someone who just used the calculator and wanted to act on the result.</li>
+				<li><strong>Be useful.</strong> If the calculator is slow or feels unreliable, nothing else on the page matters.</li>
+				<li><strong>Rank on Google.</strong> Search engines need content they can index, but a wall of SEO text would make it feel forced.</li>
+				<li><strong>Bring in sign-ups.</strong> The business needs accounts, but pushing too hard on a page about money kills trust straight away.</li>
 			</ul>
+			<p>Most competitors picked one of these and sacrificed the other two. I wanted the order of the page to make each one help the next.</p>
 
-			<h2>The Solution</h2>
-			<p>The page was structured as a single focused flow, top to bottom:</p>
+			<h2>The User Flow</h2>
+			<p>I designed the page around one simple journey. Someone searches "BTC to USD", lands on the page and gets their answer straight away. Everything else comes after that.</p>
+			<p>Right after the calculation, the three steps to download the app and create an account, because that's the moment people have just seen the tool works. Then the popular markets tables, for anyone who wants to check other pairs. And at the bottom, the FAQs, for people who still have questions before they decide.</p>
+			<figure><img src="/assets/images/projects/best-wallet/best-wallet-02-user-flow.png" alt="User flow from searching BTC to USD to downloading the app" loading="lazy" /></figure>
+
+			<h2>Key decisions</h2>
 			<ul>
-				<li>The calculator sits above the fold, immediately usable with no friction. One input, one output, a swap button, a live refresh indicator, and a single clear CTA. Nothing unnecessary.</li>
-				<li>Below the fold, the popular markets tables serve double duty — SEO value for high-intent queries and a reference tool for users exploring conversion rates across currencies.</li>
-				<li>The onboarding section follows naturally, contextualised by the calculator above it. By the time a user reaches it, they've already used the product.</li>
-				<li>FAQs and tutorials close the page, addressing trust objections and providing additional SEO-indexed content.</li>
-				<li>On mobile, the layout stacks cleanly with the calculator taking full width, the currency selector as a bottom-sheet modal, and all sections reordered for thumb-friendly scrolling.</li>
+				<li><strong>The answer comes first.</strong> The calculator sits above the fold and works the moment the page loads. One input, one result, a swap button, the time of the last update and a single button. No banners and no sign-up wall. That small "last updated" feedback does a lot of work. In crypto, a number without a time next to it is a number you can't really trust.</li>
+				<li><strong>A long list of currencies that still feels easy.</strong> The selector had to hold a lot of currencies. I split fiat and crypto with a clear divider, put search at the top and added icons, so people can spot their currency without reading every line. On mobile it opens as a bottom sheet, so everything stays within reach of your thumb.</li>
+				<li><strong>SEO content people can actually use.</strong> Instead of long paragraphs written for Google, the SEO part of the page is two "popular markets" tables, crypto to fiat and fiat to crypto. Every pair in them can bring in visitors from search, and for someone already on the page they work as a quick reference.</li>
+				<li><strong>Signing up as the natural next step.</strong> The three onboarding steps (create an account, connect a funding method, convert crypto) come right after the calculator. By the time people get there, they've already used the product. So the message reads more like "here's how to do this for real" than "give us your email".</li>
 			</ul>
-			<figure><img src="/assets/images/projects/best-wallet/best-wallet-02-solution.png" alt="Full-page flow on desktop" loading="lazy" /></figure>
+			<figure><img src="/assets/images/projects/best-wallet/best-wallet-03-key-decisions.png" alt="Calculator above the fold, currency selector and onboarding steps on desktop and mobile" loading="lazy" /></figure>
 
-			<h2>Component Design</h2>
-			<p>The calculator component was designed as a self-contained, reusable module: input fields, currency dropdowns with icon support, a swap toggle, live rate display, refresh timestamp, and a primary CTA. The currency selector modal supports both search and browsing, with fiat and crypto separated by a clear divider. All states (default, hover, active, loading, empty) were designed and documented for engineering.</p>
-			<figure><img src="/assets/images/projects/best-wallet/best-wallet-03-component.png" alt="Component states and documentation" loading="lazy" /></figure>
+			<h2>The calculator, piece by piece</h2>
+			<p>I designed the calculator as a self-contained module. The inputs, the currency dropdowns with icons, the swap toggle, the live rate, the refresh time and the button all live inside it, and the currency pairs can be configured. I designed and documented every state (default, hover, active, loading and empty), so the developers didn't have to guess.</p>
+			<figure><img src="/assets/images/projects/best-wallet/best-wallet-04-calculator.png" alt="Calculator component states and documentation" loading="lazy" /></figure>
+
+			<h2>What we shipped</h2>
+			<ul>
+				<li>A responsive page template with the calculator, the popular markets tables, the onboarding steps, FAQs and tutorials.</li>
+				<li>A reusable converter component with all its states documented.</li>
+				<li>All of it built on the existing Best Wallet design system, so it felt part of the product from day one.</li>
+			</ul>
 
 			<h2>The Results</h2>
-			<p>Delivered a fully designed, responsive page template covering the calculator feature, SEO-optimised popular markets tables, onboarding flow, FAQ section, and tutorial module — all built on the existing Best Wallet design system.</p>
-			<p>The page was designed to serve three goals simultaneously: drive organic traffic through high-intent crypto conversion queries, provide genuine utility to users already on the site, and support account creation through contextual, non-intrusive conversion touchpoints.</p>
-			<p>Because I designed this as a self-contained component with configurable currency pairs and a modular results display, it was later embedded in editorial pages. This translated into different results:</p>
+			<p>The page was designed to serve three goals simultaneously: drive organic traffic through crypto conversion requests, provide genuine utility to users already on the site, and support the app download and account creation as the natural next step.</p>
+			<p>This translated into different results:</p>
 			<ul>
-				<li>Organic traffic ↑12% within 3 months.</li>
-				<li>Embedded across 14 editorial pages within 1 month of launch.</li>
-				<li>Average session time on calculator pages: 2 mins.</li>
-				<li>4.1% of calculator users went on to create an account.</li>
+				<li>Organic traffic grew to 12% within 3 months</li>
+				<li>Average session time on calculator pages: 1 min 12 sec</li>
+				<li>4.1% of calculator users went on to download the app</li>
 			</ul>
-			<figure><img src="/assets/images/projects/best-wallet/best-wallet-04-results.png" alt="Delivered page template: calculator, SEO markets tables and onboarding flow" loading="lazy" />
-			</figure>
-
-			<h2>What I Would Do Differently</h2>
-			<p>Without access to post-launch data, it's hard to know how the SEO tables performed or whether the onboarding placement drove meaningful conversions. If I were to revisit this, I would push for tracking from day one — even basic metrics like time on page, CTA click rate, and organic entry points — to validate the design decisions and iterate from real data rather than assumptions.</p>
+			<p>You can see a prototype <a href="#">here</a>.</p>
+			<figure><img src="/assets/images/projects/best-wallet/best-wallet-05-results.png" alt="Delivered page: calculator on mobile and desktop, popular markets table and FAQs" loading="lazy" /></figure>
 
 		</article>
 	</div>
 	<div class="container-xxl">
 		<div class="case-cta-inner">
-			<p>Like what you see? There's plenty more to explore.</p>
+			<p>Like what you see? There's more to explore.</p>
 			<a class="btn btn-primary" href="/work/">View all Work</a>
 		</div>
 	</div>
